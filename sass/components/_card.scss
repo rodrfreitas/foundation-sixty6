@@ -1,0 +1,206 @@
+@use '../abstracts/variables' as v;
+
+.card {
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.services-card {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.link-icon {
+    position: absolute;
+    margin-bottom: 25px;
+    bottom: 0;
+
+    color: v.$accent-color;
+}
+
+.project-card {
+    //display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: all .3s ease-in-out;
+    margin-bottom: 25px;
+
+    p {
+        margin-top: 10px;
+       margin-bottom: 50px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 19px;
+    }
+
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+#contact-card {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: v.$primary-color;
+    border: solid 1px v.$accent-color;
+    padding: 25px;
+    border-radius: 10px;
+    
+    h2 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+#demo-reel-card {
+    margin-top: 25px;
+    display: grid;
+    
+
+    h2 {
+        margin: auto;
+        width: 100%;
+        padding-left: 4px;
+        padding-bottom: 20px;
+        //font-size: 32px;
+        font-weight: 400;
+        //color: v.$accent-color;        
+    }
+
+    p {
+        padding-left: 4px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .project-card {
+        background-color: v.$primary-color;
+    }
+
+    .project-card:hover {
+        background-color: #fff;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .services-card {
+        h2 {
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+
+    .services-card:hover {
+        border-color: v.$accent-color;
+        border-bottom-width: 10px;
+        background-color: rgb(230, 230, 230);
+        //transform:scaleY(1.02);
+    }
+
+    #contact-card {
+        border-bottom-width: 10px;
+    }
+
+    #contact-form {
+        margin-top: 25px;
+    }
+
+    #demo-reel-card {
+        margin-top: 25px;
+        display: grid;
+        
+    
+        h2 {
+            padding-bottom: 0;
+            margin: auto;
+            width: 100%;
+            font-size: 26px;
+            font-weight: 400;
+            //color: v.$accent-color;        
+        }
+    
+        p {
+            font-size: 18px;
+            line-height: 1.5em;
+            padding-right: 50px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) {
+    .project-card {
+        h2 {
+            font-size: 22px;
+        }
+    
+        p {
+            font-size: 20px;
+            line-height: 2rem;
+            //margin-bottom: 60px;
+    
+        }
+    }
+
+    #contact-card {
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+    #demo-reel-card {
+        margin-top: 25px;
+        //margin-bottom: 50px;
+        //background-color: v.$primary-color;
+        //border: solid 1px v.$accent-color;
+        //padding: 25px;
+        border-radius: 10px;
+    
+        display: grid;
+        
+    
+        h2 {
+            margin: auto;
+            width: 100%;
+            font-size: 32px;
+            font-weight: 400;
+            //color: v.$accent-color;        
+        }
+    
+        p {
+            font-size: 22px;
+            line-height: 2em;
+            padding-right: 50px;
+        }
+    }
+
+}

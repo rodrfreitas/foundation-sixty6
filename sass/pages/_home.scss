@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as v;
+
+body {
+    background-color: v.$primary-color;
+    color: v.$body-text-color;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+.active {
+    background-color: #df551e;
+}

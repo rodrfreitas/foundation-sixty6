@@ -1,0 +1,138 @@
+@use '../abstracts' as a;
+
+#sticky-nav {
+    position: sticky;
+    top: 0rem;
+    background-color: a.$primary-color;
+    border-bottom: solid 0.0625rem #c3c3c3;
+    z-index: 1;
+ }
+
+#main-logo{
+    display: block;
+    align-self: center;
+    width: 127px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-nav {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main-nav button {
+   width: 40px;
+   height: 40px;
+   background: url(../images/burger.svg) no-repeat center;
+//    margin-top: 35px;
+//    margin-bottom: 20px;
+   transition: all .5s ease;
+   border: 0;
+ }
+
+ #main-nav button.expanded {
+    transform: rotate(90deg);
+    filter: invert(1);
+    position: relative;
+    z-index: 3;
+ }
+ 
+ #burger-con {
+    display: none;
+ }
+ 
+ #burger-con.slide-toggle {
+    display: block;
+    height: 60vh;
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, .75);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+ }
+
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 80px 0px 0px 0px;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 40px 0 10px 0;
+    text-align: center;
+    color: #626262;
+    font-size: 28px;
+    color: #fff;
+ }
+ 
+ #main-nav ul li a:hover {
+    color: #df551e;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ }
+
+@media screen and (min-width: 768px){
+
+    .active {
+        background-color: #fff;
+        border-bottom: 4px solid #df551e;
+    }
+
+    #button {
+        display: none;
+    }
+  
+    #burger-con {
+        display: block;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #burger-con ul li {
+        display: inline;
+    }
+
+
+    #burguer-con.slide-toggle {
+        height: auto;
+        width: auto;
+        background: none;
+        z-index: auto;
+        position: static;
+    }
+    
+    #main-nav {
+        // padding-top: 20px;
+        margin: center;
+    }
+
+    #main-nav ul {
+        margin: 0;
+        /* border-left: solid 1px #2e2e2e; */
+        /* padding-left: 60px; */
+        /* margin-right: 120px; */
+    }
+
+    #main-nav ul li a {
+        display: inline;
+        color: #2e2e2e;
+        font-size: 18px;
+    }
+
+    #burger-con ul li {
+        margin-right: 28px;
+    }
+
+    #burger-con ul li:last-child {
+        margin-right: 0px;
+    }
+
+}

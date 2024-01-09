@@ -1,0 +1,64 @@
+@use '../abstracts/variables' as v;
+
+.btn-orange-line {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px 16px 8px 16px;
+    color: white;
+    background-color: v.$accent-color;
+    border: solid 2px v.$accent-color;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: v.$body-font-family;
+}
+
+.btn-orange-line:hover {
+    cursor: pointer;
+    background-color: #ff7236;
+    border-color: white;
+}
+
+.btn-orange-pure-line {
+    width: 100%;
+    margin-top: 35px;
+    padding: 8px 16px 8px 16px;
+    color: v.$accent-color;
+    background-color: transparent;
+    border: solid 2px v.$accent-color;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: v.$body-font-family;
+}
+
+.btn-orange-pure-line:hover {
+    cursor: pointer;
+    background-color: #ff7236;
+    color: white;
+}
+
+// #cta-buttons {
+    
+// }
+
+@media screen and (min-width: 1200px) {
+    .btn-orange-pure-line {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .btn-orange-line {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .btn-orange-pure-line {
+        margin-top: 140px;
+    }
+}
+

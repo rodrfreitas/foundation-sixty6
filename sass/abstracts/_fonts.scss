@@ -1,0 +1,5 @@
+@use 'mixins' as m;
+
+@include m.fontFace(robotoregular, "../fonts/Roboto-Regular");
+@include m.fontFace(mulishbold, "../fonts/Mulish-Bold");
+@include m.fontFace(mulishblack, "../fonts/Mulish-Black");

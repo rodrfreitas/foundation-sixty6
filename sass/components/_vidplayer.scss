@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as v;
+
+:root {
+    --plyr-color-main: #FF601C;
+    --plyr-control-icon-size: 15px;
+    --plyr-control-radius: 20px;
+    --plyr-font-family: "Helvetica Neue", Helvetica, sans-serif;
+    --plyr-controls-spacing: 15px;
+}
+
+#demo-reel {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

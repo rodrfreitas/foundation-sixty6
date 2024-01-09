@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+
+.skill-tag {
+    
+    display: inline-block;
+    margin-bottom: 8px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+

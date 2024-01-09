@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as v;
+
+#contact-form {
+    background-color: #000;
+    padding: 25px;
+    color: white;
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    input:focus {
+        border-color: v.$accent-color;
+        outline: v.$accent-color;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 25px;
+    }
+
+    textarea:focus {
+        border-color: v.$accent-color;
+        outline: v.$accent-color;
+    }
+}
+
+.subimit-button {
+    background-color: v.$accent-color;
+    border: 0;
+    color: white;
+    font-size: 22px;
+}
