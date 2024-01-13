@@ -14,9 +14,13 @@ and support required by people with severe mental health challenges.
 ## Team 6 Role and Responsibility
 
 Project Manager : Jon Yun
+
 Graphic Designer : Rodrigo Rocha de Freitas, Kwency Dahilan
+
 Frond-end Developer : Rodrigo Rocha de Freitas, Jon Yun
+
 Back-end Developer : Kwency Dahilan
+
 Motion Designer : Tiago da Siva Witt
 
 ## Project Period
