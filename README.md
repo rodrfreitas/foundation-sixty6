@@ -1,14 +1,27 @@
 # Foundation Sixty6 - FIP
 
-Foundation Sixty6 Website
+The object of the project Foundation Sixty6 is to design, develop, and pitch a professional marketing and advertising campaign and website for the Foundation Sixty6.
 
-## Installation
+The Foundation Sixty6's mission is to facilitate improved access to mental healthcare for youth between the ages of 16 and 25 suffering from psychosis, bipolar disorder (BPD), and schizophrenia,
+specifically within Southwestern Ontario.
+The organization  aim to achieve the mission by creating a network of physicians and mental healthcare
+providers who will offer counselling services for free, or at a reduced rate, and by
+generating donations / funds to support that access.
+They also aim to create long term employment opportunities that understand the flexibility
+and support required by people with severe mental health challenges.
 
-TODO: Describe the installation process
 
-## Usage
+## Team 6 Role and Responsibility
 
-TODO: Write usage instructions
+Project Manager : Jon Yun
+Graphic Designer : Rodrigo Rocha de Freitas, Kwency Dahilan
+Frond-end Developer : Rodrigo Rocha de Freitas, Jon Yun
+Back-end Developer : Kwency Dahilan
+Motion Designer : Tiago da Siva Witt
+
+## Project Period
+
+January to April 2024
 
 ## Contributing
 
@@ -18,13 +31,9 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## History
-
-TODO: Write history
-
 ## Credits
 
-Callidora Idsardi - Jong Woog Yun - Kwency Dahilan - Rodrigo Rocha de Freitas  - Tiago da Siva Witt
+Jong Woog Yun - Kwency Dahilan - Rodrigo Rocha de Freitas  - Tiago da Siva Witt
 
 ## License
 
