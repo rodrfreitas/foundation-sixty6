@@ -5,7 +5,7 @@
 // }
 
 #footer-section {
-    background-color: #252525;
+    background-color: v.$fs6-yellow;
 }
 
 #footer-content {
@@ -16,7 +16,7 @@
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #fff;
+    color: v.$fs6-blue;
 
     img {
         // margin-top: 80px;
@@ -28,7 +28,7 @@
 
     a {
         text-decoration: none;
-        color: #fff;
+        color: v.$fs6-blue;
         font-size: 19px;
         padding: 10px;
     }

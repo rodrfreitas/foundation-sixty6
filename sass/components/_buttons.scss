@@ -1,15 +1,15 @@
 @use '../abstracts/variables' as v;
 
 .btn-orange-line {
-    margin-right: 10px;
-    margin-left: 10px;
+    // margin-right: 10px;
+    // margin-left: 10px;
     width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 8px 16px 8px 16px;
-    color: white;
-    background-color: v.$accent-color;
-    border: solid 2px v.$accent-color;
+    padding: 8px 36px 8px 36px;
+    color: rgb(197, 1, 1);
+    background-color: v.$fs6-yellow;
+    border: solid 2px v.$fs6-yellow;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
@@ -18,46 +18,116 @@
 
 .btn-orange-line:hover {
     cursor: pointer;
-    background-color: #ff7236;
+    background-color: v.$fs6-blue;
     border-color: white;
 }
 
-.btn-orange-pure-line {
+.btn-yellow-pure-line {
     width: 100%;
     margin-top: 35px;
     padding: 8px 16px 8px 16px;
-    color: v.$accent-color;
+    color: v.$fs6-yellow;
     background-color: transparent;
-    border: solid 2px v.$accent-color;
+    border: solid 2px v.$fs6-yellow;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
     font-family: v.$body-font-family;
 }
 
-.btn-orange-pure-line:hover {
-    cursor: pointer;
-    background-color: #ff7236;
-    color: white;
-}
 
-// #cta-buttons {
-    
+// .btn-yellow-pure-line:hover {
+//     cursor: pointer;
+//     background-color: v.$fs6-yellow;
+//     color: v.$fs6-blue;
 // }
 
+.btn-blue-fill {
+    // margin-right: 10px;
+    // margin-left: 10px;
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 8px 36px 8px 36px;
+    color: #fff;
+    background-color: v.$fs6-blue;
+    border: solid 2px v.$fs6-blue;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: v.$body-font-family;
+}
+
+.btn-blue-fill:hover {
+    cursor: pointer;
+    border: solid 2px #fff;
+}
+
+.btn-white-fill {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px 76px 8px 76px;
+    color: v.$fs6-blue;
+    background-color: #fff;
+    border: solid 2px v.$fs6-blue;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: v.$body-font-family;
+}
+
+.btn-white-fill:hover {
+    cursor: pointer;
+    background-color: v.$fs6-blue;
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.btn-video {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    border: solid 2px v.$fs6-blue;
+    border-radius: 8px;
+    //background-color: v.$fs6-blue;
+    font-family: v.$heading-font-family;
+    color: v.$fs6-blue;
+    font-size: 16px;
+
+    &:hover {
+        color: #fff;
+        background-color: v.$fs6-blue;
+    }
+}
+
+//////////// MEDIA QUERIES ////////////
+
+@media screen and (min-width: 768px) {
+    .btn-white-fill {
+        padding: 8px 216px 8px 216px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-    .btn-orange-pure-line {
+    .btn-yellow-pure-line {
         margin-top: 150px;
+    }
+
+    .btn-white-fill {
+        padding: 8px 316px 8px 316px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .btn-orange-line {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
+    // .btn-orange-line {
+    //     // margin-right: 30px;
+    //     // margin-left: 30px;
+    // }
 
-    .btn-orange-pure-line {
+    .btn-yellow-pure-line {
         margin-top: 140px;
     }
 }

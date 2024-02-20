@@ -1,7 +1,9 @@
 @use '../abstracts/variables' as v;
 
+//HOME GLOBALS
+
 body {
-    background-color: v.$primary-color;
+    background-color: v.$fs6-pink;
     color: v.$body-text-color;
 }
 
@@ -22,4 +24,402 @@ span {
 
 .active {
     background-color: #df551e;
+}
+
+//HERO STUFF
+
+#hero-main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(211, 89, 133, 0.50), rgba(211, 89, 133, 0.50)), url(../images/hero-bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        font-family: v.$body-font-family;
+        color: #fff;
+        font-size: 38px;
+        font-weight: 100;
+    }
+
+    h2 {
+        font-family: v.$hero-heading;
+        color: #fff;
+        font-size: 48px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+
+#hero-content {
+    margin: auto 0;
+}
+
+//GOALS STUFF
+
+#goals {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    h2 {
+        color: #fff;
+        width: 100%;
+    }
+}
+
+#goals-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    h2 {
+        color: #fff;
+    }
+}
+
+.goals-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 200px;
+    h3 {
+        margin-top: 12px;
+    }
+}
+
+//DONATE CTA STUFF
+
+.section-separator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    //gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //background-color: #272727;
+    background: linear-gradient(rgba(34, 133, 199, 0.70), rgba(34, 133, 199, 0.70)),url(../images/donation-cta-bg.jpg);
+    background-size: cover;
+    background-position: center;   
+    //margin-bottom: 55px;
+
+    h2 {
+        padding: 12px;
+        color: v.$fs6-yellow;
+        font-size: 38px;
+        line-height: 3rem;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+        padding: 0 35px 0 35px;
+        margin-bottom: 30px;
+    }
+}
+
+//EVENTS LIST STUFF
+
+#events {
+    padding-top: 60px;
+    background-color: #fff;
+}
+
+#events-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    h2 {
+        text-align: center;
+        width: 100%;
+        font-family: v.$heading-font-family;
+        color: v.$fs6-blue;
+    }
+}
+
+#video-section {
+    display: flex;
+    margin-top: 60px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+#video-headline {
+    width: 640px;
+
+    h3 {
+        color: v.$fs6-blue;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+#video-player {
+    width: 640px;
+}
+
+// LATEST BLOG POSTS
+
+.blog-latest {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(211, 89, 133, 0.65), rgba(211, 89, 133, 0.65)),url(../images/blog-widget.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        color: v.$fs6-yellow;
+        //font-size: 38px;
+        width: 100%;
+        font-family: v.$heading-font-family;
+        color: #fff;
+        font-weight: 900;
+        text-align: center;
+    }
+}
+
+.blog-latest-content {
+    display: flex;
+    justify-content: center;
+    //align-items: stretch;
+    //align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    h3 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+
+.blog-post-preview {
+    
+    width: 300px;
+
+    img {
+        border-radius: 8px;
+    }
+
+    &:hover {
+        h3 {
+            color: v.$fs6-yellow;
+        }
+    }
+}
+
+///////CONTACT
+
+#contact-section {
+    background: linear-gradient(rgba(34, 133, 199, 0.70), rgba(34, 133, 199, 0.70)),url(../images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact-content {
+    padding-top: 60px;
+    text-align: center;
+
+    h2 {
+        color: v.$fs6-yellow;
+    }
+}
+
+/////////////////////////// MEDIA QUERIES ////////////////////////////////
+
+@media screen and (min-width: 768px) {
+    #hero-main {
+        text-align: left;
+
+        h3 {
+            font-size: 48px;
+        }
+
+        h2 {
+            font-size: 58px;
+        }
+
+        p {
+            line-height: 32px;
+            padding-right: 200px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    //HERO STUFF
+
+    #hero-main {
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        text-align: left;
+
+        h3 {
+            font-family: v.$body-font-family;
+            color: #fff;
+            font-size: 60px;
+            font-weight: 100;
+        }
+
+        h2 {
+            font-family: v.$hero-heading;
+            color: #fff;
+            font-size: 80px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 22px;
+            line-height: 32px;
+            padding-right: 180px;
+        }
+    }
+
+    #hero-content {
+        margin: auto 0;
+    }
+
+    .section-separator {
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    #events-section {
+        h2 {
+            font-size: 38px;
+            font-weight: 900;
+        }
+    }
+
+    #video-headline {
+
+        margin: auto 0;
+
+        width: 30%;
+
+        h3 {
+            font-size: 32px;
+        }
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    #video-section {
+        padding-bottom: 90px;
+    }
+
+    .blog-latest {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        h2 {
+            font-size: 38px;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+
+    #hero-main {
+        height: 800px;
+        background-size: cover;
+        background-position: center;
+        text-align: left;
+
+        h3 {
+            font-family: v.$body-font-family;
+            color: #fff;
+            font-size: 80px;
+            font-weight: 100;
+        }
+
+        h2 {
+            font-family: v.$hero-heading;
+            color: #fff;
+            font-size: 120px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            line-height: 36px;
+            padding-right: 800px;
+        }
+    }
+
+    #hero-content {
+        margin: auto 0;
+    }
+
+    .section-separator {
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            padding: 0 200px 0 200px;
+        }
+    }
+
+    #video-headline {
+
+        margin: auto 0;
+
+        width: 30%;
+        padding-right: 50px;
+
+        h3 {
+            font-size: 52px;
+        }
+
+        p {
+            margin-bottom: 30px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    #video-player {
+        width: 854px;
+        height: 480px;
+    }
+
+    .blog-latest-content {
+        gap: 30px;
+    }
+
+    .blog-post-preview {
+        width: 500px;
+    }
+
+    
+
 }
