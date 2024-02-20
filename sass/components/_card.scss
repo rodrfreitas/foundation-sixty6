@@ -56,11 +56,12 @@
 }
 
 #contact-card {
-    margin-top: 25px;
-    margin-bottom: 50px;
-    background-color: v.$primary-color;
-    border: solid 1px v.$accent-color;
-    padding: 25px;
+    //margin: auto 0;
+    //margin-top: 25px;
+    //margin-bottom: 50px;
+    //background-color: v.$primary-color;
+    //border: solid 1px v.$accent-color;
+
     border-radius: 10px;
     
     h2 {
@@ -70,6 +71,10 @@
 
     p {
         font-size: 18px;
+        color: #fff;
+        line-height: 36px;
+        margin-top: 16px;
+        margin-bottom: 20px;
     }
 }
 
@@ -93,6 +98,81 @@
     }
 }
 
+///EVENTS LIST CARD
+.event-card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    // width: 674px;
+    // height: 616px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+    }
+
+    img:hover {
+        //cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    &:hover .event-card-content{
+        transform: translateY(0%);
+    }
+}
+
+.event-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(13,14,32,0.55);
+    //transform: translateY(100%);
+    transition: all 0.4s ease;
+
+    h3 {
+        color: v.$fs6-yellow;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    p {
+        color: #fff;
+        margin: 8px 0;
+        margin-bottom: 0px;
+    }
+}
+
+.btn-card {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    //background-color: v.$fs6-blue;
+    font-family: v.$heading-font-family;
+    color: #fff;
+    font-size: 16px;
+    //letter-spacing: 1.5px;
+    margin-top: 10px;
+
+    &:hover {
+        color: v.$fs6-yellow;
+    }
+}
+
+///////////////////////// MEDIA QUERIES ////////////////////////
 
 @media screen and (min-width: 768px) {
     .project-card {
@@ -101,6 +181,11 @@
 
     .project-card:hover {
         background-color: #fff;
+    }
+
+    .event-card {
+        width: 350px;
+        height: 450px;
     }
 
 }
@@ -148,6 +233,11 @@
             line-height: 1.5em;
             padding-right: 50px;
         }
+    }
+
+    .event-card {
+        width: 500px;
+        height: 500px;
     }
 
 }
@@ -201,6 +291,11 @@
             line-height: 2em;
             padding-right: 50px;
         }
+    }
+
+    .event-card {
+        width: 700px;
+        height: 700px;
     }
 
 }
