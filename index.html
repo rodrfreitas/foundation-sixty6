@@ -22,6 +22,16 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="js/gsap.min.js"></script>
+    <script defer src="js/DrawSVGPlugin.min.js"></script>
+    <script defer src="js/scrolltrigger.js"></script>
     <!-- ++++++++++++++ PLYR  ++++++++++++++++-->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script defer src="js/plyr-ini.js"></script>
@@ -120,8 +130,168 @@
       </div>
     </section>
     <!-- ++++++++++++++ STORYTELLING SECTION ++++++++++++++++-->
-    <section id="stotytelling" class="grid-con">
-      <h2>STORYTELLING SECTION</h2>
+    <section class="story-telling grid-con">
+      <div
+        class="col-span-full m-col-start-3 m-col-end-12 l-col-start-4 l-col-end-11first-stat"
+      >
+        About
+        <div id="numbers">0</div>
+        <br />
+
+        Canadians die per year by suicide – an average of almost
+        <span>11</span> suicides a day.
+      </div>
+
+      <div id="scrollElement"></div>
+      <div class="container col-span-full l-col-start-3 l-col-end-12">
+        <h2 class="hidden">Please start scrolling.</h2>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1612.51 1543.61">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #707071;
+                stroke-width: 10px;
+              }
+
+              .cls-2 {
+                fill: #2285c7;
+              }
+
+              .cls-2,
+              .cls-3 {
+                stroke-width: 0px;
+              }
+
+              .cls-3 {
+                fill: #ffe354;
+              }
+            </style>
+          </defs>
+          <g id="Layer_5" data-name="Layer 5">
+            <path
+              class="cls-1"
+              d="M743.58.7s-16.96,120.66,79.68,132.33,176.52,5.6,176.52,5.6c0,0,38.03-12.44,91.7-68.17s62.74-82.98,101.33-47.77,23.26,20.91,33.48,20.91,18.38,7.15,25.53,14.3,89.87-5.11,90.89,18.38-5.11,19.4,0,41.87,5.11,25.53,5.11,33.7-8.17,19.4,14.3,31.66,32.68,18.63,33.7,23.1,26.53,1.47,29.6,22.38,20.44,124.05,20.44,124.05c0,0,6.31,34.13,16.94,34.43s36.16,1.32,48.42,6.42,49.67-3.06,65.36,0,36.8,6.28,29.4,16.34-8.98,13.28-4.89,19.4-7.15,7.15-23.49,24.51-48,39.83-38.81,49.02,21.45,14.3-7.15,12.26-58.58-6.48-49.02,8.17,18.38,26.55,12.26,27.57-30.64-3.06-35.74,11.23-10.21,18.38-21.45,16.34-19.4-3.24-39.83,13.28-63.32,30.64-70.47,13.28,12.26-11.23,13.28-24.51,7.15-33.7,16.34-37.79,23.49-17.36,12.26-27.57-17.36-12.26-9.19-21.45.57-24.76,3.06-36.77,22.1-8.53,34.72-4.09-17.36-23.49-54.13-3.06-90.89-34.72-80.68-44.94,22.55-16.94,4.13-17.66-25.23,5.45-32.72-10.94,1.02-31.66-9.19-30.64-3.06,3.06-19.4,8.17-19.4-8.17-22.47,9.19,6.13,30.64-11.23,29.62-1.02-12.26-35.74-13.28-37.79,2.04-40.85-5.11-11.23-7.15-18.38-4.09-8.17,6.13-9.19-2.04-17.36,6.13-43.91-4.09,2.46-22.18-18.69-36.62-11.86-2.39-8.84-18.03,39.34-89.89,1.77-94.45-382.04,0-382.04,0L5.41,211.02v544.63s-9.32,92.3,60.92,94.42,766.94,1.87,766.94,1.87l711.67.53,1.15,578.04s5.11,78.07-78.2,75.79-781.62-.04-781.62-.04"
+            />
+          </g>
+          <g id="Ball_1">
+            <circle
+              id="Ellipse_44"
+              data-name="Ellipse 44"
+              class="cls-2"
+              cx="616.28"
+              cy="211.99"
+              r="41"
+            />
+            <circle
+              id="Ellipse_45"
+              data-name="Ellipse 45"
+              class="cls-3"
+              cx="616.28"
+              cy="211.99"
+              r="15"
+            />
+          </g>
+          <g id="Ball_2">
+            <circle
+              id="Ellipse_46"
+              data-name="Ellipse 46"
+              class="cls-2"
+              cx="833.28"
+              cy="851.61"
+              r="41"
+            />
+            <circle
+              id="Ellipse_47"
+              data-name="Ellipse 47"
+              class="cls-3"
+              cx="833.28"
+              cy="851.61"
+              r="15"
+            />
+          </g>
+          <g id="Ball_3">
+            <circle
+              id="Ellipse_49"
+              data-name="Ellipse 49"
+              class="cls-2"
+              cx="686.28"
+              cy="1502.61"
+              r="41"
+            />
+            <circle
+              id="Ellipse_48"
+              data-name="Ellipse 48"
+              class="cls-3"
+              cx="686.28"
+              cy="1502.61"
+              r="15"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="story-telling-card1 col-span-full m-col-start-5 m-col-end-8">
+        <p>
+          In Ontario about 4% of adults and 14% of high-school students report
+          having seriously contemplated suicide in the past year. 4% of
+          high-school students report having attempted suicide.
+        </p>
+      </div>
+      <div class="story-telling-card2 col-span-full m-col-start-6 m-col-end-9">
+        <p>
+          Suicide rates are approximately <br /><span>3X higher</span>
+          among men compared to women.
+        </p>
+      </div>
+      <div class="ontario col-span-ful m-col-start-8 m-col-end-13">
+        <img src="images/ontario.png" alt="ontario" />
+      </div>
+      <div class="sad-teenager col-span-ful m-col-start-3 m-col-end-6">
+        <img src="images/sad.png" alt="sad teenager" />
+      </div>
+      <div class="man-pic col-span-ful m-col-start-7 m-col-end-10">
+        <img src="images/man.png" alt="man" />
+      </div>
+      <div class="woman-pic col-span-ful m-col-start-9 m-col-end-12">
+        <img src="images/woman.png" alt="woman" />
+      </div>
+      <div class="pie-chart col-span-full m-col-start-8 m-col-end-12">
+        <svg
+          id="pie-chart"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1000 1000"
+          width="300"
+          height="300"
+        >
+          <circle
+            class="circle"
+            id="target1"
+            r="240"
+            stroke="#D35985"
+            cx="500"
+            cy="500"
+          />
+          <circle
+            class="circle"
+            id="target2"
+            r="240"
+            stroke="#2285C7"
+            cx="500"
+            cy="500"
+          />
+        </svg>
+      </div>
+      <div id="story-telling-mobile" class="col-span-full">
+        <div>
+          <img src="images/storytelling-mobile.jpg" alt="storytelling stats" />
+        </div>
+      </div>
+      <div id="story-telling-tablet" class="col-span-full">
+        <div>
+          <img src="images/storytelling-tablet.jpg" alt="storytelling stats" />
+        </div>
+      </div>
     </section>
     <!-- ++++++++++++++ SECTION SEPARATOR - DONATION CTA ++++++++++++++++-->
     <section class="section-separator">
