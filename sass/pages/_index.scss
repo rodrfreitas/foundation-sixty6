@@ -1,5 +1,8 @@
 @forward 'home';
 @forward 'about';
+@forward 'events';
+@forward 'event-details';
+@forward 'blog';
 
 html {
     scroll-behavior: smooth;

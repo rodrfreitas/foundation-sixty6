@@ -1,0 +1,84 @@
+@use '../abstracts/variables' as v;
+
+//HERO STUFF
+
+#hero-events {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: v.$fs6-blue;
+
+    h3 {
+        font-size: 32px;
+        font-family: v.$body-font-family;
+        color: #fff;
+        line-height: 52px;
+    }
+
+    span {
+        background-color: v.$fs6-pink;
+    }
+}
+
+.overlapping-img {
+    position: absolute;
+    top: 97%;
+    right: -10px;
+    width: 20%;
+    //height: auto;
+}
+
+//EVENT LIST STUFF
+
+
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    #hero-events {
+        h3 {
+            font-size: 42px;
+            line-height: 82px;
+        }
+    }
+
+    .overlapping-img {
+        position: absolute;
+        top: 93%;
+        right: -10px;
+        width: 15%;
+        //height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #hero-events {
+        h3 {
+            font-size: 52px;
+            line-height: 82px;
+            padding: 50px 110px 60px 110px;
+        }
+    }
+
+    .overlapping-img {
+        position: absolute;
+        top: 83%;
+        right: -10px;
+        width: 20%;
+        //height: auto;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    #hero-events {
+        h3 {
+            font-size: 80px;
+            line-height: 122px;
+            padding: 50px 250px px 250px;
+        }
+    }
+
+    .overlapping-img {
+        top: 73%;
+    }
+}

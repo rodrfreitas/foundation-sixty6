@@ -1,0 +1,141 @@
+@use '../abstracts/variables' as v;
+
+//HERO STUFF
+
+#hero-blog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background: linear-gradient(rgba(211, 89, 133, 0.65), rgba(211, 89, 133, 0.65)), url(../images/blog/hero-blog.jpg);
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        font-family: v.$body-font-family;
+        color: #fff;
+        font-size: 38px;
+        font-weight: 100;
+    }
+
+    h2 {
+        font-family: v.$hero-heading;
+        color: #fff;
+        font-size: 48px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+    }
+}
+
+#blog {
+    padding-top: 60px;
+    background-color: #fff;
+}
+
+.blog-latest-content-list {
+    display: flex;
+    justify-content: center;
+    //align-items: stretch;
+    //align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    //top: 0;
+
+    h3 {
+        color: #3a3a3a;
+    }
+
+    p {
+        color: #3a3a3a;
+        font-size: 14px;
+        line-height: 36px;
+    }
+}
+
+.blog-post-preview-list {
+    
+    width: 300px;
+
+    img {
+        border-radius: 8px;
+    }
+
+    &:hover {
+        h3 {
+            color: v.$fs6-blue;
+        }
+    }
+}
+
+///////////BLOG POST STUFF
+
+#blog-post-section {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+#blog-post-content {
+
+    h2 {
+        padding-top: 40px;
+        //padding-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    p {
+        padding-top: 30px;
+    }
+}
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    #hero-blog {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h3 {
+            font-size: 62px;
+        }
+    }
+
+    #blog-post-section {
+        padding-bottom: 90px;
+    }
+
+    #blog-post-content {
+        h2 {
+            padding-top: 80px;
+            font-size: 40px;
+        }
+    
+        h3 {
+            font-size: 18px;
+            font-weight: 100;
+        }
+    
+        p {
+            padding-top: 30px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .blog-post-preview-list {
+        width: 490px;
+    }
+}

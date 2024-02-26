@@ -1,0 +1,64 @@
+@use '../abstracts/variables' as v;
+
+// PAGINATION STUFF
+
+.pagination-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.pagination-container {
+    //background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+}
+
+.page {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: v.$fs6-blue;
+        color: white;
+    }
+}
+
+.current {
+    background-color: v.$fs6-blue;
+    color: #fff;
+    font-weight: bold;
+}
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    .pagination-section {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pagination-section {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    
+}

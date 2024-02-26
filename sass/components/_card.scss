@@ -172,6 +172,40 @@
     }
 }
 
+///EVENTS LIST CARD MINI
+
+.event-card-mini {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    // width: 674px;
+    // height: 616px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: solid 1px v.$fs6-pink;
+    border-bottom-width: 10px;
+    //box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.4s ease;
+    }
+
+    img:hover {
+        //cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    &:hover .event-card-content{
+        transform: translateY(0%);
+    }
+}
+
 ///////////////////////// MEDIA QUERIES ////////////////////////
 
 @media screen and (min-width: 768px) {
@@ -186,6 +220,11 @@
     .event-card {
         width: 350px;
         height: 450px;
+    }
+
+    .event-card-mini {
+        width: 350px;
+        height: 250px;
     }
 
 }
@@ -208,6 +247,11 @@
 
     #contact-card {
         border-bottom-width: 10px;
+
+        p {
+            font-size: 22px;
+            padding-right: 60px;
+        }
     }
 
     #contact-form {
@@ -240,10 +284,15 @@
         height: 500px;
     }
 
+    .event-card-mini {
+        width: 450px;
+        height: 350px;
+    }
+
 }
 
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1900px) {
     .project-card {
         h2 {
             font-size: 22px;
@@ -263,7 +312,9 @@
         }
 
         p {
-            font-size: 22px;
+            padding-right: 80px;
+            line-height: 52px;
+            font-size: 26px;
         }
     }
 
@@ -296,6 +347,11 @@
     .event-card {
         width: 700px;
         height: 700px;
+    }
+
+    .event-card-mini {
+        width: 650px;
+        height: 450px;
     }
 
 }
