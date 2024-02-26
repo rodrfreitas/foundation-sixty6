@@ -1,0 +1,162 @@
+@use '../abstracts/variables' as v;
+
+#about-hero-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about-hero-text {
+    width: 320px;
+
+    h2 {
+        color: #fff;
+        font-size: 36px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+#about-hero-logo {
+    margin: auto 0;
+    width: 280px;
+}
+
+#about-section {
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#about-section-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#about-section-text {
+    width: 320px;
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+#about-section-img {
+    margin: auto 0;
+    width: 320px;
+
+    img {
+        border-radius: 8px;
+        border: solid 0px v.$fs6-pink;
+        border-bottom-width: 10px;
+    }
+}
+
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    #about-hero-text {
+
+        width: 420px;
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    #about-section-text {
+        width: 380px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #about-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #about-hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #about-hero-text {
+        width: 580px;
+
+        h2 {
+            font-size: 65px;
+        }
+    }
+
+    #about-hero-logo{
+        width: 360px;
+    }
+
+    #about-section-text {
+        width: 580px;
+    }
+
+    #about-section-img {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+
+    #about-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #about-hero-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #about-hero-text {
+        width: 700px;
+        margin-right: 260px;
+
+        h2 {
+            font-size: 75px;
+        }
+    }
+
+    #about-hero-logo{
+        width: 560px;
+    }
+
+    #about-section-text {
+        width: 700px;
+        margin-right: 260px;
+        h2 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+        
+    }
+
+    #about-section-img {
+        width: 560px;
+    }
+}

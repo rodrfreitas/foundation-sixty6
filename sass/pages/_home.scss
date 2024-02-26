@@ -148,6 +148,42 @@ span {
     }
 }
 
+.link-to-page {
+    margin-top: 32px;
+    color: v.$fs6-blue;
+    font-size: 16px;
+    text-align: right;
+
+    a {
+        color: v.$fs6-blue;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: v.$fs6-blue;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 3px;
+    }
+}
+
+.link-to-blogs {
+    margin-top: 32px;
+    color: #fff;
+    font-size: 16px;
+    text-align: right;
+
+    a {
+        color: #fff;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 3px;
+    }
+}
+
 #video-section {
     display: flex;
     margin-top: 60px;
@@ -234,7 +270,7 @@ span {
 ///////CONTACT
 
 #contact-section {
-    background: linear-gradient(rgba(34, 133, 199, 0.70), rgba(34, 133, 199, 0.70)),url(../images/contact-bg.jpg);
+    background: linear-gradient(rgba(34, 133, 199, 0.80), rgba(34, 133, 199, 0.80)),url(../images/contact-bg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -311,11 +347,29 @@ span {
         }
     }
 
+    #events {
+        padding-top: 100px;
+    }
+
     #events-section {
         h2 {
             font-size: 38px;
             font-weight: 900;
         }
+    }
+
+    .link-to-page {
+        font-size: 22px;
+        text-align: left;
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .link-to-blogs {
+        font-size: 22px;
+        text-align: left;
+        padding-left: 152px;
+        margin-bottom: 20px;
     }
 
     #video-headline {
@@ -345,10 +399,15 @@ span {
             font-size: 38px;
         }
     }
+
+    #contact-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1900px) {
 
     #hero-main {
         height: 800px;
@@ -387,6 +446,14 @@ span {
             line-height: 36px;
             padding: 0 200px 0 200px;
         }
+    }
+
+    .link-to-page {
+        padding-left: 10px;
+    }
+
+    .link-to-blogs {
+        padding-left: 228px;
     }
 
     #video-headline {

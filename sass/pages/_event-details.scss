@@ -1,0 +1,187 @@
+@use '../abstracts/variables' as v;
+
+//HERO STUFF
+
+#hero-event-details {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 160px;
+    //padding-bottom: 50px;
+    text-align: center;
+    background-color: v.$fs6-pink;
+
+    h3 {
+        font-size: 32px;
+        font-family: v.$body-font-family;
+        color: #fff;
+        line-height: 52px;
+    }
+
+    span {
+        background-color: v.$fs6-pink;
+    }
+}
+
+#div-event {
+    //background-color: #fff;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    //max-height: 100%;
+    width: 80%;
+    height: 220px;
+    overflow: hidden;
+    border: solid 0px v.$fs6-pink;
+    border-bottom-width: 10px;
+    border-radius: 8px;
+}
+
+// .img-event {
+//     //transform: scale(1.2);
+// }
+
+#event-details-section {
+    background-color: #fff;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+#event-content {
+    margin-top: 60px;
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+//EVENT LIST CTA
+
+.section-separator-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    //gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //background-color: #272727;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/donation-cta-bg.jpg);
+    background-size: cover;
+    background-position: center;   
+    //margin-bottom: 55px;
+
+    h2 {
+        padding: 12px;
+        color: v.$fs6-pink;
+        font-size: 38px;
+        line-height: 3rem;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+        padding: 0 35px 0 35px;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    #hero-event-details {
+
+        margin-bottom: 178px;
+
+        h3 {
+            font-size: 42px;
+            line-height: 82px;
+        }
+    }
+
+    #event-details-section {
+        padding-top: 140px;
+        //padding-bottom: 20px;
+    }
+
+    #event-content {
+        p {
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+
+    #div-event {
+        height: 320px;
+    }
+
+    .img-event {
+        width: 1200px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    #hero-event-details {
+        h3 {
+            font-size: 52px;
+            line-height: 82px;
+            padding: 50px 110px 60px 110px;
+        }
+    }
+
+    .section-separator-alt {
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    #div-event {
+        top: 400px;
+        width: 1200px;
+    }
+
+    
+    .img-event {
+        width: 1200px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+    #hero-event-details {
+        h3 {
+            font-size: 80px;
+            line-height: 122px;
+            padding-bottom: 170px;
+        }
+    }
+
+    .section-separator-alt {
+        p {
+            font-size: 24px;
+            line-height: 36px;
+            padding: 0 200px 0 200px;
+        }
+    }
+
+    #div-event {
+        top: 550px;
+        height: 520px;
+        width: 1900px;
+    }
+
+    .img-event {
+        width: 1900px;
+    }
+
+    #event-details-section {
+        padding-top: 230px;
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation Sixty6 :: About</title>
+    <title>Foundation Sixty6 | About</title>
     <!-- ++++++++++++++ FAVICON  ++++++++++++++++-->
     <link rel="shortcut icon" href="images/favicon.png" type="images/x-icon">
     <!-- ++++++++++++++ ICON LIBRARY ++++++++++++++++-->
@@ -12,12 +12,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
     <!-- ++++++++++++++ GREENSOCK ++++++++++++++++-->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <!-- ++++++++++++++ PLYR  ++++++++++++++++-->
-    <script defer src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    <script defer src="js/plyr-ini.js"></script>
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
@@ -26,6 +22,64 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    
+    <h1 class="hidden">About</h1>
+    <!-- ++++++++++++++ HEADER ++++++++++++++++-->
+    <div id="sticky-nav">
+      <header class="grid-con" id="main-header">
+        <div id="main-logo" class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3">
+          <a href="index.html" class="nav-logo"><img src="images/fs6-logo.svg" alt="Logo"/></a>
+        </div>
+        <nav id="main-nav" class="col-start-4 col-end-5 m-col-span-9 l-col-span-9">
+          <h2 class="hidden">Main Navigation</h2>
+          <button id="button"></button>
+          <div id="burger-con">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="needhelp.html">Need Help?</a></li>
+              <li><a href="#contact-section">Contact Us</a></li>
+              <li class="btn-yellow-pure-line">
+                <a href="#contact-section">GET INVOLVED</a>
+              </li>
+              <li class="btn-orange-line">
+                <a href="#contact-section">DONATE</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <!-- ++++++++++++++ HERO ++++++++++++++++-->
+    <section id="about-hero" class="grid-con">
+        <div id="about-hero-content" class="col-span-full l-col-start-2 l-col-end-12">
+            <div id="about-hero-text">
+                <h2>Who we are</h2>
+                <p>We are the parents and supporters of an individual who has faced significant barriers in accessing adequate mental healthcare for severe conditions recently diagnosed under the umbrella of psychosis.</p>
+            </div>
+            <div id="about-hero-logo">
+                <img src="images/fs6-logo.svg" alt="Foundation Sixty6 Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ++++++++++++++ ABOUT ++++++++++++++++-->
+    <section id="about-section" class="grid-con">
+        <div id="about-section-content" class="col-span-full l-col-start-2 l-col-end-12">
+            <div id="about-section-text">
+                <h2>About</h2>
+                <p>Foundation Sixty6 is a collaboration of parents and supporters who have recently encountered personal difficulties in obtaining adequate access to mental healthcare for severe conditions. Observing the widespread challenges many face in accessing these resources, we are dedicated to addressing the barriers and alleviating the suffering experienced by those in need.</p>
+
+                <p>Our foundation was created aiming to advocate tirelessly for these people and their families who suffer from severe mental health conditions. We strongly believe in hope, resilience, and the power of collective compassion, together, we can strive to create a world where mental health is understood, accessible, and embraced for and by everyone.</p>
+            </div>
+
+            <div id="about-section-img">
+                <img src="images/about-img1.jpg" alt="About img 1">
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
