@@ -102,13 +102,13 @@
     { opacity: 0 }, // Start with opacity 0 (fully transparent)
     {
       x: 0,
-      delay: 2,
+      delay: 3,
       opacity: 1,
       duration: 3,
       scrollTrigger: {
-        trigger: ".woman-pic",
+        trigger: ".story-telling-card2",
         start: "top center",
-        toggleActions: "play restart play none",
+        toggleActions: "play restart play restart",
       },
     }
   );
