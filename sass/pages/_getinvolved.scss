@@ -1,0 +1,166 @@
+@use '../abstracts/variables' as v;
+
+#getinvolved-hero {
+    background-color: v.$fs6-blue;
+}
+
+#getinvolved-hero-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#getinvolved-hero-text {
+    width: 320px;
+
+    h2 {
+        color: #fff;
+        font-size: 36px;
+        line-height: 62px;
+    }
+
+    span {
+        background-color: v.$fs6-pink;
+    }
+
+    p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+#getinvolved-hero-logo {
+    margin: auto 0;
+    width: 280px;
+}
+
+.get-involved-section {
+    background-color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+// .get-involved-content {
+    
+// }
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    #getinvolved-hero-text {
+
+        width: 420px;
+
+        h2 {
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    #about-section-text {
+        width: 380px;
+    }
+
+    #our-mission {
+        width: 730px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    // #getinvolved-hero {
+    //     padding-top: 80px;
+    //     padding-bottom: 80px;
+    // }
+
+    #getinvolved-hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    #getinvolved-hero-text {
+        width: 580px;
+
+        h2 {
+            font-size: 65px;
+            line-height: 85px;
+        }
+
+        p {
+            margin-top: 42px;
+            line-height: 42px;
+        }
+    }
+
+    #getinvolved-hero-logo {
+        width: 360px;
+    }
+
+    .get-involved-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+
+
+    #getinvolved-hero-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #getinvolved-hero-text {
+
+        margin: auto 0;
+
+        width: 750px;
+        margin-right: 260px;
+
+        h2 {
+            font-size: 75px;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    #getinvolved-hero-logo {
+        width: 460px;
+    }
+
+    .get-involved-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        h2 {
+            font-size: 62px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 42px;
+        }
+    }
+
+    
+}

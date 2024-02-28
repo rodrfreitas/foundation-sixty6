@@ -1,0 +1,134 @@
+@use '../abstracts/variables' as v;
+
+#needhelp-hero-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background: linear-gradient(rgba(34, 133, 199, 0.80), rgba(34, 133, 199, 0.80)), url(../images/hero-needhelp-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#needhelp-hero-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+#needhelp-hero-headline {
+
+    padding-bottom: 22px;
+
+    h2 {
+        font-size: 32px;
+        color: #fff;
+    }
+
+    span {
+        background-color: v.$fs6-pink;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.needhelp-hero-card {
+    display: flex;
+    width: 320px;
+    border-radius: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    //align-items:stretch;
+    
+    background-color: #fff;
+    padding: 50px 30px 50px 30px;
+
+    h3 {
+        align-self: flex-start;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        color: v.$fs6-pink;
+        font-size: 22px;
+    }
+
+    p {
+        align-items: flex-start;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+
+    .help-icon {
+        padding-bottom: 20px;
+        width: 100%;
+        i {
+            margin: auto;
+        }
+    }
+}
+
+////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 768px) {
+    #needhelp-hero-headline {
+        h2 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .needhelp-hero-card {
+        width: 220px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    #needhelp-hero-section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .needhelp-hero-card {
+        width: 302px;
+    }
+
+}
+
+@media screen and (min-width: 1900px) {
+
+    #needhelp-hero-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    #needhelp-hero-headline {
+        h2 {
+            font-size: 80px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 24px;
+            padding: 0 350px 0 350px;
+            line-height: 42px;
+            margin-bottom: 100px;
+        }
+    }
+
+    .needhelp-hero-card {
+        width: 320px;
+    }
+
+}
