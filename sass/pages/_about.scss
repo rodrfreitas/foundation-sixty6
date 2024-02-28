@@ -46,6 +46,10 @@
 #about-section-text {
     width: 320px;
 
+    h2 {
+        color: v.$fs6-pink;
+    }
+
     p {
         margin-top: 20px;
     }
@@ -62,8 +66,107 @@
     }
 }
 
+#our-mission {
+    //padding: 0 10px 0 10px;
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+
+    h2 {
+        //width: 100%;
+        color: v.$fs6-pink;
+    }
+}
+
+.section-separator-color-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: v.$fs6-yellow;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h3 {
+        font-weight: 100;
+        color: v.$fs6-blue;
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+
+    h2 {
+        color: v.$fs6-blue;
+        font-size: 28px;
+        margin: 0;
+    }
+}
+
+#founders-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    background-color: #fff;
+}
+
+#founders-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.founders-card {
+    // height: 300px;
+    // width: 300px;
+    text-align: center;
+    h2 {
+        color: v.$fs6-pink;
+        margin: 0;
+        margin-top: 12px;
+    }
+}
+
+.founders-photo {
+
+    img {
+        border-radius: 50%;
+        //padding-bottom: 12px;
+        width: 300px;
+        height: 300px;
+    }
+}
 
 ////////////////////// MEDIA QUERIES ////////////////////////
+
+@media screen and (min-width: 700px) {
+    #our-mission {
+        width: 730px;
+    }
+
+    .section-separator-color-fill {
+
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        h3 {
+            
+            font-size: 32px;
+  
+        }
+    
+        h2 {
+
+            font-size: 62px;
+
+        }
+    }
+
+    #founders-section {
+        padding: 90px 0 90px 0;
+    }
+}
 
 @media screen and (min-width: 768px) {
     #about-hero-text {
@@ -81,6 +184,10 @@
 
     #about-section-text {
         width: 380px;
+    }
+
+    #our-mission {
+        width: 730px;
     }
 }
 
@@ -114,6 +221,10 @@
 
     #about-section-img {
         width: 360px;
+    }
+
+    #our-mission {
+        width: 1000px;
     }
 }
 
@@ -158,5 +269,40 @@
 
     #about-section-img {
         width: 560px;
+    }
+
+    #our-mission {
+        width: 1555px;
+
+        h2 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .section-separator-color-fill {
+
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+        h3 {
+            
+            font-size: 62px;
+  
+        }
+    
+        h2 {
+
+            font-size: 120px;
+
+        }
+    }
+
+    #founders-content {
+        gap: 150px;
     }
 }
