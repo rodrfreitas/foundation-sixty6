@@ -7,24 +7,38 @@
     <!-- ++++++++++++++ FAVICON  ++++++++++++++++-->
     <link rel="shortcut icon" href="images/favicon.png" type="images/x-icon" />
     <!-- ++++++++++++++ ICON LIBRARY ++++++++++++++++-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
     <!-- ++++++++++++++ CSS INCLUDES ++++++++++++++++-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <!-- ++++++++++++++ GREENSOCK ++++++++++++++++-->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+    ></script>
     <script defer src="js/gsap.min.js"></script>
     <script defer src="js/DrawSVGPlugin.min.js"></script>
     <script defer src="js/scrolltrigger.js"></script>
     <!-- ++++++++++++++ PLYR  ++++++++++++++++-->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script defer src="js/plyr-ini.js"></script>
+    <!-- ++++++++++++++ Charts JS  ++++++++++++++++-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script defer src="js/charts.js"></script>
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
@@ -37,10 +51,18 @@
     <!-- ++++++++++++++ HEADER ++++++++++++++++-->
     <div id="sticky-nav">
       <header class="grid-con" id="main-header">
-        <div id="main-logo" class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3">
-          <a href="index.html" class="nav-logo"><img src="images/fs6-logo.svg" alt="Logo"/></a>
+        <div
+          id="main-logo"
+          class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3"
+        >
+          <a href="index.html" class="nav-logo"
+            ><img src="images/fs6-logo.svg" alt="Logo"
+          /></a>
         </div>
-        <nav id="main-nav" class="col-start-4 col-end-5 m-col-span-9 l-col-span-9">
+        <nav
+          id="main-nav"
+          class="col-start-4 col-end-5 m-col-span-9 l-col-span-9"
+        >
           <h2 class="hidden">Main Navigation</h2>
           <button id="button"></button>
           <div id="burger-con">
@@ -114,7 +136,7 @@
     <!-- ++++++++++++++ STORYTELLING SECTION ++++++++++++++++-->
     <section class="story-telling grid-con">
       <div
-        class="col-span-full m-col-start-3 m-col-end-12 l-col-start-4 l-col-end-11first-stat"
+        class="col-span-full m-col-start-3 m-col-end-12 l-col-start-4 l-col-end-11 first-stat"
       >
         About
         <div id="numbers">0</div>
@@ -238,32 +260,10 @@
       <div class="woman-pic col-span-ful m-col-start-9 m-col-end-12">
         <img src="images/woman.png" alt="woman" />
       </div>
-      <div class="pie-chart col-span-full m-col-start-8 m-col-end-12">
-        <svg
-          id="pie-chart"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 1000"
-          width="300"
-          height="300"
-        >
-          <circle
-            class="circle"
-            id="target1"
-            r="240"
-            stroke="#D35985"
-            cx="500"
-            cy="500"
-          />
-          <circle
-            class="circle"
-            id="target2"
-            r="240"
-            stroke="#2285C7"
-            cx="500"
-            cy="500"
-          />
-        </svg>
+      <div class="suicide-chart col-span-full l-col-start-8 l-col-end-11">
+        <canvas id="suicideChart"></canvas>
       </div>
+
       <div id="story-telling-mobile" class="col-span-full">
         <div>
           <img src="images/storytelling-mobile.jpg" alt="storytelling stats" />
@@ -273,6 +273,23 @@
         <div>
           <img src="images/storytelling-tablet.jpg" alt="storytelling stats" />
         </div>
+      </div>
+      <div
+        class="col-span-full m-col-start-1 m-col-end-7 l-col-start-3 l-col-end-7 ageGroupChart"
+      >
+        <canvas id="ageGroupChart"></canvas>
+      </div>
+      <div
+        class="col-span-full m-col-start-7 m-col-end-13 l-col-start-7 l-col-end-11 story-telling-card3"
+      >
+        <h3>
+          After accidents, <span>suicide</span> is the second leading cause of
+          death for people aged 15 to 24.
+        </h3>
+        <p>
+          Source: Mental Illness and Addiction: Facts and Statistics<br />
+          By Centre for Addiction and Mental Health
+        </p>
       </div>
     </section>
     <!-- ++++++++++++++ SECTION SEPARATOR - DONATION CTA ++++++++++++++++-->
@@ -343,7 +360,9 @@
       </div>
 
       <div class="link-to-page col-span-full l-col-start-8 xl-col-start-9">
-        <a href="events.html">LEARN MORE ABOUT OUR EVENTS <span class="ri-arrow-right-line"></span></a>
+        <a href="events.html"
+          >LEARN MORE ABOUT OUR EVENTS <span class="ri-arrow-right-line"></span
+        ></a>
       </div>
 
       <div id="video-section" class="col-span-full">
@@ -401,7 +420,9 @@
         </div>
       </div>
       <div class="link-to-blogs col-span-full l-col-start-8 xl-col-start-9">
-        <a href="blog.html">MORE BLOG POSTS <span class="ri-arrow-right-line"></span></a>
+        <a href="blog.html"
+          >MORE BLOG POSTS <span class="ri-arrow-right-line"></span
+        ></a>
       </div>
     </section>
 
