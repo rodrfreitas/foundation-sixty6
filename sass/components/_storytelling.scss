@@ -21,7 +21,8 @@
 .woman-pic,
 .story-telling-card1,
 .story-telling-card2,
-.ontario {
+.ontario,
+.suicide-chart {
   display: none;
 }
 
@@ -38,6 +39,19 @@
   grid-row: 1/3;
 }
 
+.story-telling-card3 h3 {
+  font-size: 25px;
+}
+
+.story-telling-card3 h3 span {
+  text-transform: uppercase;
+  color: v.$fs6-pink;
+}
+
+.first-stat {
+  text-align: center;
+  font-size: 30px;
+}
 @media screen and (min-width: 768px) {
   .story-telling {
     padding-top: 100px;
@@ -46,7 +60,7 @@
     font-size: 150px;
   }
   .first-stat {
-    // text-align: left;
+    text-align: center;
     font-size: 30px;
   }
 
@@ -56,13 +70,24 @@
   #story-telling-mobile {
     display: none;
   }
+
+  .story-telling-card3 h3 {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+
+  .story-telling-card3 p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   #story-telling-tablet {
     display: none;
   }
   .first-stat {
-    // text-align: left;
+    text-align: left;
     font-size: 55px;
   }
 
@@ -100,6 +125,7 @@
   .man-pic {
     display: inline-grid;
     grid-row: 2/3;
+    z-index: 2;
   }
 
   .man-pic img {
@@ -116,6 +142,7 @@
     margin-top: 11.2em;
     display: inline-grid;
     grid-row: 2/3;
+    z-index: 2;
   }
 
   .container {
@@ -150,12 +177,12 @@
     height: 20px;
   }
 
-  .pie-chart {
-    margin-top: 650px;
+  .suicide-chart {
+    margin-top: 11.8em;
     display: inline-grid;
     margin-left: 40px;
     grid-row: 2/3;
-    // z-index: 1;
+    z-index: 1;
   }
 
   .cls-1 {
@@ -172,9 +199,9 @@
   }
 
   .story-telling-card2 {
-    margin-top: 660px;
+    margin-top: 11.5em;
     display: inline-grid;
-    margin-left: 55px;
+    margin-left: 48px;
     grid-row: 2/3;
   }
   .story-telling-card1 p {
@@ -202,6 +229,17 @@
     font-size: 30px;
     padding-top: 2px;
     color: white;
+  }
+
+  .story-telling-card3 h3 {
+    margin-top: 3.5em;
+    font-size: 35px;
+    line-height: 43px;
+  }
+
+  .story-telling-card3 p {
+    margin-top: 10px;
+    font-size: 16px;
   }
 }
 

@@ -23,7 +23,7 @@
 
   gsap.fromTo(
     ".story-telling-card1",
-    { opacity: 0, x: "100px" }, // Start with opacity 0 (fully transparent)
+    { opacity: 0, x: "100px" },
     {
       x: 0,
       // delay: 2,
@@ -38,7 +38,7 @@
   );
   gsap.fromTo(
     ".sad-teenager",
-    { opacity: 0, x: "-100px" }, // Start with opacity 0 (fully transparent)
+    { opacity: 0, x: "-100px" },
     {
       x: 0,
       delay: 1,
@@ -53,7 +53,7 @@
   );
   gsap.fromTo(
     ".story-telling-card2",
-    { opacity: 0, x: "100px" }, // Start with opacity 0 (fully transparent)
+    { opacity: 0, x: "100px" },
     {
       x: 0,
       delay: 3,
@@ -68,7 +68,7 @@
   );
   gsap.fromTo(
     ".man-pic",
-    { opacity: 0, x: "-100px" }, // Start with opacity 0 (fully transparent)
+    { opacity: 0, x: "-100px" },
     {
       x: 0,
       delay: 4,
@@ -83,7 +83,7 @@
   );
   gsap.fromTo(
     ".woman-pic",
-    { opacity: 0, x: "100px" }, // Start with opacity 0 (fully transparent)
+    { opacity: 0, x: "100px" },
     {
       x: 0,
       delay: 4,
@@ -96,22 +96,38 @@
       },
     }
   );
-
   gsap.fromTo(
-    "#pie-chart",
-    { opacity: 0 }, // Start with opacity 0 (fully transparent)
+    "#suicideChart",
+    { opacity: 0, y: "100px" },
     {
-      x: 0,
-      delay: 3,
+      y: 0,
+      delay: 4,
       opacity: 1,
-      duration: 3,
+      duration: 5,
       scrollTrigger: {
-        trigger: ".story-telling-card2",
+        trigger: ".woman-pic",
         start: "top center",
-        toggleActions: "play restart play restart",
+        toggleActions: "play play play play",
       },
     }
   );
+
+  gsap.fromTo(
+    "#ageGroupChart",
+    { opacity: 0, x: "100px" },
+    {
+      x: 0,
+      delay: 5,
+      opacity: 1,
+      duration: 5,
+      scrollTrigger: {
+        trigger: ".story-telling-card2",
+        start: "top center",
+        toggleActions: "play restart play none",
+      },
+    }
+  );
+
   gsap.set("circle", {
     drawSVG: 0,
     rotation: -90,
