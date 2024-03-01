@@ -1,4 +1,4 @@
-(() => {
+export function scrollRevCalls() {
 
     const sr = ScrollReveal ({
         origin: 'top',
@@ -13,4 +13,4 @@
     sr.reveal(`.small_sphere, .services-card, .goals-details .proj-sshot`, {interval: 100})
     sr.reveal(`.goals-details, .event-card, .event-card-mini, .blog-post-preview, .blog-post-preview-list, .founders-card`, {interval: 10})
 
-})();
+}

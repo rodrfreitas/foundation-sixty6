@@ -17,9 +17,7 @@
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
-    <script defer src="js/scrollrevcalls.js"></script>
-    <script async src="js/scrolltop.js"></script>
-    <script defer src="js/main.js"></script>
+    <script type="module" defer src="js/main.js"></script>
 </head>
 <body>
   <h1 class="hidden">Events</h1>
@@ -35,16 +33,16 @@
         <div id="burger-con">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="needhelp.html">Need Help?</a></li>
-            <li><a href="#contact-section">Contact Us</a></li>
-            <li class="btn-yellow-pure-line">
-              <a href="#contact-section">GET INVOLVED</a>
-            </li>
-            <li class="btn-orange-line">
-              <a href="#contact-section">DONATE</a>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="needhelp.html">Need Help?</a></li>
+              <li><a href="#contact-section">Contact Us</a></li>
+              <li class="btn-yellow-pure-line">
+                <a href="getinvolved.html">GET INVOLVED</a>
+              </li>
+              <li class="btn-orange-line">
+                <a href="#">DONATE</a>
             </li>
           </ul>
         </div>
@@ -187,5 +185,9 @@
         </div>
       </div>
     </footer>
+    <!-- ++++++++++++++ SCROLL TOP ++++++++++++++++-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
 </body>
 </html>

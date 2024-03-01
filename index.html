@@ -7,34 +7,20 @@
     <!-- ++++++++++++++ FAVICON  ++++++++++++++++-->
     <link rel="shortcut icon" href="images/favicon.png" type="images/x-icon" />
     <!-- ++++++++++++++ ICON LIBRARY ++++++++++++++++-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin=""/>
     <!-- ++++++++++++++ CSS INCLUDES ++++++++++++++++-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <!-- ++++++++++++++ GREENSOCK ++++++++++++++++-->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
-    ></script>
     <script defer src="js/gsap.min.js"></script>
     <script defer src="js/DrawSVGPlugin.min.js"></script>
     <script defer src="js/scrolltrigger.js"></script>
     <!-- ++++++++++++++ PLYR  ++++++++++++++++-->
     <script defer src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
-    <script defer src="js/plyr-ini.js"></script>
     <!-- ++++++++++++++ Charts JS  ++++++++++++++++-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
@@ -42,11 +28,9 @@
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
-    <script defer src="js/scrollrevcalls.js"></script>
-    <!-- <script async src="js/scrolltop.js"></script> -->
-    <script defer src="js/main.js"></script>
+    <script type="module" defer src="js/main.js"></script>
   </head>
-  <body>
+  <body data-page="home">
     <h1 class="hidden">Main Page</h1>
     <!-- ++++++++++++++ HEADER ++++++++++++++++-->
     <div id="sticky-nav">
@@ -74,10 +58,10 @@
               <li><a href="needhelp.html">Need Help?</a></li>
               <li><a href="#contact-section">Contact Us</a></li>
               <li class="btn-yellow-pure-line">
-                <a href="#contact-section">GET INVOLVED</a>
+                <a href="getinvolved.html">GET INVOLVED</a>
               </li>
               <li class="btn-orange-line">
-                <a href="#contact-section">DONATE</a>
+                <a href="#">DONATE</a>
               </li>
             </ul>
           </div>
@@ -95,7 +79,8 @@
           about, we offer a helping hand. Together, we can make all the
           difference in someone else's life.
         </p>
-        <button class="btn-blue-fill">How we help</button>
+        <a href="#goals"><button class="btn-blue-fill">How we help</button></a>
+        
       </div>
     </section>
     <!-- ++++++++++++++ GOALS ++++++++++++++++-->
@@ -304,7 +289,7 @@
         </p>
       </div>
       <div id="cta-buttons">
-        <a href="index.html#contact-section"
+        <a href="#external-url"
           ><button class="btn-white-fill">I WANT TO HELP</button></a
         >
       </div>
@@ -316,22 +301,22 @@
 
         <div class="event-card">
           <a href="eventdetails.html"
-            ><img src="images/event-1.jpg" alt="Event 1"
+            ><img src="images/event-2.jpg" alt="Event 1"
           /></a>
           <div class="event-card-content">
             <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Our campaign for mental health aims to break down barriers... </p>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
 
         <div class="event-card">
           <a href="eventdetails.html"
-            ><img src="images/event-2.jpg" alt="Event 1"
+            ><img src="images/event-1.jpg" alt="Event 1"
           /></a>
           <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>TikTok Challenge</h3>
+            <p>Inside the booth, a surprise awaits those who...</p>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
@@ -341,8 +326,8 @@
             ><img src="images/event-3.jpg" alt="Event 1"
           /></a>
           <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Talent Donation With Fanshawe, Western</h3>
+            <p>With the symbolic yellow door at the entrance...</p>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
@@ -352,8 +337,8 @@
             ><img src="images/event-4.jpg" alt="Event 1"
           /></a>
           <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Instagram Photo Contest</h3>
+            <p>This unexpected twist adds an element of...</p>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
@@ -428,7 +413,18 @@
 
     <!-- ++++++++++++++ GALLERY ++++++++++++++++-->
     <section id="gallery" class="grid-con">
-      <h2>GALLERY SECTION</h2>
+      <div class="gallery-content col-span-full l-col-start-3 l-col-end-11">
+        <h2>GALLERY</h2>
+        <div class="gallery-container">
+          <div class="gallery-slider">
+            <img class="slider-picture" src="images/gallery/pic1.jpg" alt="Picture 1" class="gallery-picture">
+            <img class="slider-picture" src="images/gallery/pic2.jpg" alt="Picture 1" class="gallery-picture">
+            <img class="slider-picture" src="images/gallery/pic3.jpg" alt="Picture 1" class="gallery-picture">
+          </div>
+          <button id="btn-prev"><i class="ri-arrow-left-fill"></i> Previous</button>
+          <button id="btn-next">Next <i class="ri-arrow-right-fill"></i></button>
+        </div>
+      </div>
     </section>
     <!-- ++++++++++++++ CONTACT ++++++++++++++++-->
     <section id="contact-section" class="grid-con">
@@ -449,7 +445,7 @@
         </p>
       </div>
       <div id="contact-form" class="col-span-full l-col-span-5">
-        <form method="post" action="savecontact.php">
+        <form>
           <!-- <label for="name">Name: </label> -->
           <input
             type="text"
@@ -495,5 +491,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- ++++++++++++++ SCROLL TOP ++++++++++++++++-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+
   </body>
 </html>

@@ -4,16 +4,18 @@
     // margin-right: 10px;
     // margin-left: 10px;
     width: 250px;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 8px 36px 8px 36px;
-    color: rgb(197, 1, 1);
     background-color: v.$fs6-yellow;
     border: solid 2px v.$fs6-yellow;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;
-    font-family: v.$body-font-family;
+    font-family: v.$heading-font-family;
+    color: rgb(93, 1, 197);
+    text-shadow: -1px 0 v.$fs6-blue, 0 1px v.$fs6-blue, 1px 0 v.$fs6-blue, 0 -1px v.$fs6-blue;
 }
 
 .btn-orange-line:hover {
@@ -23,9 +25,11 @@
 }
 
 .btn-yellow-pure-line {
-    width: 100%;
+    width: 70%;
     margin-top: 35px;
+    margin: auto;
     padding: 8px 16px 8px 16px;
+    //padding: 8px 16px 8px 16px;
     color: v.$fs6-yellow;
     background-color: transparent;
     border: solid 2px v.$fs6-yellow;
@@ -126,6 +130,10 @@
     //     // margin-right: 30px;
     //     // margin-left: 30px;
     // }
+
+    .btn-yellow-pure-line {
+        width: 100%;
+    }
 
     .btn-yellow-pure-line {
         margin-top: 140px;
