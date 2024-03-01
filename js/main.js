@@ -1,18 +1,16 @@
-(() => {
+import { gallery } from "./modules/gallery.js";
+import { hambrMenu } from "./modules/hambr-menu.js";
+import { plyrIni } from "./modules/plyr-ini.js";
+import { scrollRevCalls } from "./modules/scrollrevcalls.js";
+import { scrollToTop } from "./modules/scrolltop.js";
 
-    // Hamburguer menu START
+//Functions called on all pages
 
-	"use strict";	
-	console.log("Hamb menu running");
+hambrMenu(); //hamburger menu
+scrollRevCalls(); //scrollreveal handling
+scrollToTop(); //scroll to top button
 
-	let button = document.querySelector("#button");
-	let burgerCon = document.querySelector("#burger-con");
-
-	function hamburgerMenu() {
-		burgerCon.classList.toggle("slide-toggle");
-		button.classList.toggle("expanded");
-	};
-
-	button.addEventListener("click", hamburgerMenu, false);	
-
-})();
+if(document.body.dataset.page === 'home') {
+	plyrIni();
+	gallery();
+} 

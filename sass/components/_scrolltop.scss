@@ -4,11 +4,11 @@
    position: fixed; 
    right: 1rem;
    bottom: -50%;
-   background-color: black;
+   background-color: v.$fs6-pink;
    display: inline-flex;
    padding: 8px;
    font-size: 1.25rem;
-   color: v.$accent-color;
+   color: v.$fs6-yellow;
    z-index: 10;
    transition: bottom .4s, transform .4s, background-color .4s;
 }
