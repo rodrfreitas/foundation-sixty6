@@ -45,9 +45,30 @@
     padding-bottom: 40px;
 }
 
-// .get-involved-content {
-    
-// }
+.get-involved-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    p {
+        margin-bottom: 20px;
+        span {
+            font-weight: 900;
+        }
+    }
+
+    h2 {
+        color: v.$fs6-blue;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        line-height: 32px;
+    }
+}
+
 
 ////////////////////// MEDIA QUERIES ////////////////////////
 
@@ -63,6 +84,14 @@
         p {
             text-align: left;
         }
+    }
+
+    .get-involved-text {
+        width: 60%;
+    }
+    
+    .get-involved-img {
+        width: 35%;
     }
 }
 
@@ -110,6 +139,11 @@
         }
     }
 
+    .get-involved-text {
+        h3 {
+            padding-right: 80px;
+        }
+    }
 }
 
 @media screen and (min-width: 1900px) {

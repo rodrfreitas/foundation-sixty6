@@ -27,6 +27,8 @@
     <script defer src="js/charts.js"></script>
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
+    <!-- ++++++++++++++ VUEJS ++++++++++++++++-->
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
     <script type="module" defer src="js/main.js"></script>
   </head>
@@ -70,51 +72,49 @@
     </div>
     <!-- ++++++++++++++ HERO ++++++++++++++++-->
     <section id="hero-main" class="grid-con">
-      <div id="hero-content" class="col-span-full l-col-start-2">
-        <h3>We help people to</h3>
-        <h2>GET HELP</h2>
-        <p>
-          Here at foundation Sixty6 we support you when you need it most,
-          whether you're facing challenges or seeking to help someone you care
-          about, we offer a helping hand. Together, we can make all the
-          difference in someone else's life.
-        </p>
-        <a href="#goals"><button class="btn-blue-fill">How we help</button></a>
+
+      <div id="hero-content" class="col-span-full l-col-start-2 l-col-end-12">
+
+        <div id="hero-text">
+          <h3>We <span>open</span> the door to</h3>
+          <h2>POSSIBILITIES</h2>
+          <p>
+            Here at foundation Sixty6 we support you when you need it most,
+            whether you're facing challenges or seeking to help someone you care
+            about, we offer a helping hand. Together, we can make all the
+            difference in someone else's life.
+          </p>
+          <a href="#goals"><button class="btn-blue-fill">How we help</button></a>
+        </div>
         
+        <div id="hero-img">
+          <img src="images/herov2.png" alt="Foundation Sixty6 Hero Image">
+        </div>
+
       </div>
+
     </section>
     <!-- ++++++++++++++ GOALS ++++++++++++++++-->
     <section id="goals" class="grid-con">
       <div id="goals-content" class="col-span-full">
         <h2>Our Goals</h2>
-        <div class="goals-details">
-          <i class="circle-icon-container ri-user-smile-line"></i>
-          <h3>Support</h3>
-          <p>Foster a supportive and inclusive environment</p>
-        </div>
-
-        <div class="goals-details">
-          <i class="circle-icon-container ri-seedling-line"></i>
-          <h3>Funding</h3>
-          <p>Funding prioritizing mental health support</p>
-        </div>
-
-        <div class="goals-details">
-          <i class="circle-icon-container ri-eye-close-line"></i>
-          <h3>Break Stigma</h3>
-          <p>Reduce the stigma surrounding mental illness</p>
-        </div>
-
+        
         <div class="goals-details">
           <i class="circle-icon-container ri-hand-coin-line"></i>
-          <h3>Affordable</h3>
-          <p>Affordable access to Mental Healthcare</p>
+          <h3>Make Affordable Access a Reality</h3>
+          <p>Affordable access to Mental Healthcare.</p>
         </div>
 
         <div class="goals-details">
-          <i class="circle-icon-container ri-chat-check-line"></i>
-          <h3>Awareness</h3>
-          <p>Public Awareness and understanding</p>
+          <i class="circle-icon-container ri-service-line"></i>
+          <h3>Build Physician Network</h3>
+          <p>Connecting families in need.</p>
+        </div>
+
+        <div class="goals-details">
+          <i class="circle-icon-container ri-user-smile-line"></i>
+          <h3>Create Employment Opportunities</h3>
+          <p>Foster partnerships for employment opportunities for young adults.</p>
         </div>
       </div>
     </section>
@@ -294,6 +294,26 @@
         >
       </div>
     </section>
+    <!-- ++++++++++++++ Building Bridges ++++++++++++++++-->
+    <section id="building-bridges" class="grid-con">
+      <div id="building-bridges-content" class="col-span-full">
+
+        <div id="building-bridges-text">
+          <h2>Openning Doors</h2>
+          <h3>The Vital Role of Healthcare Providers and Employers</h3>
+          <p><span>Healthcare providers play a vital role</span> in diagnosing, treating, and supporting individuals with mental health conditions. Their expertise and compassionate care are essential in helping individuals navigate their mental health journey and access the resources they need to thrive.</p>
+          <p>Similarly, <span>employers play a crucial role in creating inclusive workplaces</span> that support the mental health and well-being of their employees. By fostering environments of understanding, flexibility, and support, employers can empower individuals to bring their whole selves to work and thrive in their professional endeavors.</p>
+          <p><span>Together, healthcare providers and employers form a powerful network of support</span>, breaking down barriers and creating pathways to mental wellness. By recognizing the importance of this partnership, we can work towards a society where individuals facing mental health challenges receive the care, support, and opportunities they deserve.</p>
+          <a href="getinvolved.html" class="btn-video">GET INVOLVED TODAY</a>
+        </div>
+
+        <div id="building-bridges-img">
+          <img src="images/bridges.png" alt="Heath Care Providers and Employers">
+        </div>
+
+      </div>
+    </section>
+
     <!-- ++++++++++++++ Campaigns and EVENTS ++++++++++++++++-->
     <section id="events" class="grid-con">
       <div id="events-section" class="col-span-full">
@@ -475,7 +495,7 @@
       <h2 class="hidden">Footer</h2>
       <div id="footer-content" class="col-span-full">
         <div id="footer-logo">
-          <img src="images/fs6-logo-blue.svg" alt="logo" />
+          <img src="images/fs6-logo-white.svg" alt="logo" />
         </div>
         <nav>
           <a href="index.html">Home</a>

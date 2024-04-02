@@ -19,9 +19,11 @@ Graphic Designer : Rodrigo Rocha de Freitas, Kwency Dahilan
 
 Frond-end Developer : Rodrigo Rocha de Freitas, Jon Yun
 
+UX/UI Designer: Rodrigo Rocha de Freitas
+
 Back-end Developer : Kwency Dahilan
 
-Motion Designer : Tiago da Siva Witt
+Motion Designer : Tiago da Silva Witt
 
 ## Project Period
 
