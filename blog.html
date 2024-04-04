@@ -16,6 +16,10 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
+     <!-- ++++++++++++++ VUEJS ++++++++++++++++-->
+     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+     <!-- ++++++++++++++ VUEJS ROUTER ++++++++++++++++-->
+     <script defer src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
     <script type="module" defer src="js/main.js"></script>
 </head>
@@ -56,60 +60,20 @@
       </div>
     </section>
 
-    <!-- ++++++++++++++ EVENT LIST ++++++++++++++++-->
-  <section id="blog" class="grid-con">
+    <!-- ++++++++++++++ BLOG LIST ++++++++++++++++-->
+  <section id="blog" class="grid-con blog-list">
     <div id="events-section" class="col-span-full">
 
         <div class="blog-latest-content-list col-span-full">
-    
-            <div class="blog-post-preview-list">
-              <a href="blog-post.html"
-                ><img src="images/blog/blog-post-1.jpg" alt="Blog post 1"
-              /></a>
-              <h3>Understanding Psychotic Depression</h3>
-              <p>2024, February 10</p>
-            </div>
-    
-            <div class="blog-post-preview-list">
-              <a href="blog-post.html"
-                ><img src="images/blog/blog-post-2.jpg" alt="Blog post 2"
-              /></a>
-              <h3>The Power in Seeking Support</h3>
-              <p>2024, February 10</p>
-            </div>
-    
-            <div class="blog-post-preview-list">
-              <a href="blog-post.html"
-                ><img src="images/blog/blog-post-3.jpg" alt="Blog post 3"
-              /></a>
-              <h3>You are not alone</h3>
-              <p>2024, February 8</p>
-            </div>
+          
+          <div v-for="latestBlog in blogData" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+            <a>
+                <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+            </a>
+            <h3>{{ latestBlog.title }}</h3>
+            <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
+          </div>
 
-
-          <div class="blog-post-preview-list">
-            <a href="blog-post.html"
-              ><img src="images/blog/blog-post-4.jpg" alt="Blog post 4"
-            /></a>
-            <h3>Barriers to Find and Receive Support</h3>
-            <p>2024, February 7</p>
-          </div>
-  
-          <div class="blog-post-preview-list">
-            <a href="blog-post.html"
-              ><img src="images/blog/blog-post-5.jpg" alt="Blog post 5"
-            /></a>
-            <h3>Symptoms of Psychotic Depression</h3>
-            <p>2024, February 6</p>
-          </div>
-  
-          <div class="blog-post-preview-list">
-            <a href="blog-post.html"
-              ><img src="images/blog/blog-post-6.jpg" alt="Blog post 6"
-            /></a>
-            <h3>Empathy in Action: Your help can Save a life</h3>
-            <p>2024, February 5</p>
-          </div>
         </div>
       
     </div>
@@ -119,7 +83,7 @@
 <section class="pagination-section">
     <div class="pagination-container">
         <div class="pagination">
-            <a href="#" class="page current">1</a>
+            <a href="." class="page current">1</a>
             <a href="#" class="page">2</a>
             <a href="#" class="page">3</a>
         </div>
