@@ -54,32 +54,10 @@
 
   <section id="blog-post-section" class="grid-con">
     <div id="blog-post-content" class="col-span-full l-col-start-2 l-col-end-12">
-        <h2>Understanding Psychotic Depression</h2>
-        <h3>by <span>Author Name</span></h3>
-        <h3>2024, February 10</h3>
-        <p>
-            Psychotic depression is a specific presentation of major depressive disorder (MDD) that involves symptoms of psychosis during an episode of depression. Here are some critical points about psychotic depression:
-            Definition: Psychotic depression refers to MDD with features of psychosis, which can include:
-            -Hallucinations: Seeing or hearing things that aren't there.
-            -Delusions: Holding false beliefs despite evidence to the contrary.
-            -Psychomotor impairment: Slowed movements and difficulty performing everyday tasks.
-            -Stupor: A state of reduced responsiveness and awareness.
-            -Prevalence: Estimates suggest that MDD with psychosis affects 10% to 19% of people experiencing a major depression episode. 
-        </p>
-        <p>
-            Among those receiving inpatient care for depression, this rate increases significantly.
-            -Severity: Psychotic depression is often considered more severe than depression without psychosis because it may involve:
-            -Melancholic features: Intense sadness and loss of pleasure.
-        </p>
-        <p>
-            More severe symptoms.
-            Greater risk of self-harm or suicidal thoughts.
-            If you or someone you know is struggling with thoughts of self-harm or suicide, please seek help immediately. 
-        </p>
-        <p>
-            You can call or text out to the National Suicide Prevention Lifeline at 9-8-8. You also can contact us by phone or email, we have our doors open to hear and help you. 
-        </p>
-        <p><span>Always remember, support is available; you don't have to face any of this alone.</span></p>
+      <h2>{{ blog.title }}</h2>
+      <h3>{{ blog.published_date }}</h3>
+      <p>by: <span>{{ blog.author_name }}</span></p>
+      <p>{{ blog.content }}</p>
     </div>
   </section>
 
@@ -187,5 +165,8 @@
     <a href="#" class="scrolltop" id="scroll-top">
         <i class="ri-arrow-up-s-line"></i>
       </a>
+    <!-- this scripts tags only works when placed at the bottom -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.7/dist/vue.global.prod.js"></script>
+    <script src="js/blog-post.js"></script>
 </body>
 </html>

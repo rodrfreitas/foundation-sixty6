@@ -18,7 +18,7 @@ class BlogController extends Controller {
         //  $blogs = Blog::all();
 
         $blogs = Blog::join('authors', 'blogs.author_id', '=', 'authors.id')
-        ->select('blogs.id', 'blogs.title', 'blogs.published_date', 'authors.name as author_name', 'content')
+        ->select('blogs.id', 'blogs.title', 'blogs.thumbnail', 'blogs.published_date', 'authors.name as author_name', 'content')
         ->orderBy('blogs.published_date')
         ->get();
 

@@ -29,6 +29,8 @@
     <script defer src="js/scrollreveal.min.js"></script>
     <!-- ++++++++++++++ VUEJS ++++++++++++++++-->
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- ++++++++++++++ VUEJS ROUTER ++++++++++++++++-->
+    <script defer src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
     <script type="module" defer src="js/main.js"></script>
   </head>
@@ -319,49 +321,16 @@
       <div id="events-section" class="col-span-full">
         <h2>EVENTS AND CAMPAIGNS</h2>
 
-        <div class="event-card">
-          <a href="eventdetails.html"
-            ><img src="images/event-2.jpg" alt="Event 1"
-          /></a>
+        <div v-for="latestEvents in eventsData.slice(0, 4)" class="event-card">
+          <a href="eventdetails.html">
+            <img :src="'./images/' + latestEvents.thumbnail" :alt="latestEvents.title">
+          </a>
           <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Our campaign for mental health aims to break down barriers... </p>
+            <h3>{{ latestEvents.title }}</h3>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
-
-        <div class="event-card">
-          <a href="eventdetails.html"
-            ><img src="images/event-1.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>TikTok Challenge</h3>
-            <p>Inside the booth, a surprise awaits those who...</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
-
-        <div class="event-card">
-          <a href="eventdetails.html"
-            ><img src="images/event-3.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>Talent Donation With Fanshawe, Western</h3>
-            <p>With the symbolic yellow door at the entrance...</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
-
-        <div class="event-card">
-          <a href="eventdetails.html"
-            ><img src="images/event-4.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>Instagram Photo Contest</h3>
-            <p>This unexpected twist adds an element of...</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
+        
       </div>
 
       <div class="link-to-page col-span-full l-col-start-8 xl-col-start-9">
@@ -396,33 +365,40 @@
 
     <!-- ++++++++++++++ LATEST BLOG POSTS ++++++++++++++++-->
 
-    <section class="blog-latest grid-con">
+    <section class="blog-latest blog-list grid-con">
       <div class="blog-latest-content col-span-full">
         <h2>LATEST BLOG UPDATES</h2>
 
-        <div class="blog-post-preview">
-          <a href="blog-post.html"
-            ><img src="images/blog/blog-post-1.jpg" alt="Blog post 1"
-          /></a>
-          <h3>Understanding Psychotic Depression</h3>
-          <p>2024, February 10</p>
-        </div>
 
-        <div class="blog-post-preview">
-          <a href="blog-post.html"
-            ><img src="images/blog/blog-post-2.jpg" alt="Blog post 2"
-          /></a>
-          <h3>The Power in Seeking Support</h3>
-          <p>2024, February 10</p>
-        </div>
+      <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+          <a>
+              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+          </a>
+          <h3>{{ latestBlog.title }}</h3>
+          <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
+      </div>
+      
 
-        <div class="blog-post-preview">
-          <a href="blog-post.html"
-            ><img src="images/blog/blog-post-3.jpg" alt="Blog post 3"
-          /></a>
-          <h3>You are not alone</h3>
-          <p>2024, February 10</p>
-        </div>
+        <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+            <a :href="'blog-post.html?id=' + latestBlog.id">
+                <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+            </a>
+            <h3>{{ latestBlog.title }}</h3>
+            <p>{{ latestBlog.published_date }}</p>
+        </div> -->
+
+
+      
+      
+
+        <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview">
+          <a href="blog-post.html">
+              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+          </a>
+          <h3>{{ latestBlog.title }}</h3>
+          <p>{{ latestBlog.published_date }}</p>
+        </div> -->
+
       </div>
       <div class="link-to-blogs col-span-full l-col-start-8 xl-col-start-9">
         <a href="blog.html"

@@ -1,5 +1,9 @@
 @use '../abstracts/variables' as v;
 
+#about-hero {
+    background-color: v.$fs6-blue;
+}
+
 #about-hero-content {
     display: flex;
     justify-content: center;
