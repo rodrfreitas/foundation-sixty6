@@ -3,8 +3,8 @@
 #sticky-nav {
   position: sticky;
   top: 0rem;
-  background-color: a.$fs6-blue;
-  border-bottom: solid 0.0625rem #1c6ba0;
+  background-color: #fff;
+  border-bottom: solid 0.3rem a.$fs6-blue;
   z-index: 3;
 }
 
@@ -70,7 +70,7 @@
 }
 
 #main-nav ul li a:hover {
-  color: a.$fs6-yellow;
+  color: a.$fs6-pink;
 }
 
 #main-nav ul li:last-child {
@@ -120,7 +120,7 @@
 
   #main-nav ul li a {
     display: inline;
-    color: #fff;
+    color: a.$fs6-blue;
     font-size: 18px;
   }
 

@@ -68,7 +68,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     //background-color: #272727;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/donation-cta-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/hcp_cta.jpg);
     background-size: cover;
     background-position: center;   
     //margin-bottom: 55px;
@@ -89,6 +89,36 @@
     }
 }
 
+.section-separator-alt2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    //gap: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //background-color: #272727;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/emp-cta.jpg);
+    background-size: cover;
+    background-position: center;   
+    //margin-bottom: 55px;
+
+    h2 {
+        padding: 12px;
+        color: v.$fs6-pink;
+        font-size: 38px;
+        line-height: 3rem;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 36px;
+        padding: 0 35px 0 35px;
+        margin-bottom: 30px;
+    }
+}
 
 
 ////////////////////// MEDIA QUERIES ////////////////////////
@@ -140,6 +170,11 @@
             font-size: 22px;
             line-height: 32px;
         }
+    }
+
+    .section-separator-alt2 {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     #div-event {
