@@ -17,7 +17,7 @@ Project Manager : Jon Yun
 
 Graphic Designer : Rodrigo Rocha de Freitas, Kwency Dahilan
 
-Frond-end Developer : Rodrigo Rocha de Freitas, Jon Yun
+Frond-end Developer : Rodrigo Rocha de Freitas
 
 UX/UI Designer: Rodrigo Rocha de Freitas
 
