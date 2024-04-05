@@ -50,30 +50,28 @@
       </header>
     </div>
 
-    <!-- ++++++++++++++ HERO ++++++++++++++++-->
-    <section id="hero-event-details" class="grid-con">
+    <div class="event-info">
+      <!-- ++++++++++++++ HERO ++++++++++++++++-->
+      <section id="hero-event-details" class="grid-con">
         <div id="hero-content" class="col-span-full l-col-start-2 l-col-end-12">
-          <h3>Unlock The Door To Possibility!</h3>
+          <h3>{{event.title}}</h3>
         </div>
         <div id="div-event" class="col-span-full l-col-start-2 l-col-end-12">
-            <img class="img-event" src="images/event-1.jpg" alt="Event 1">
+            <!-- <img class="img-event" src="images/event-1.jpg" alt={{event.title}}> -->
+            <img :src="'./images/' + event.thumbnail" :alt="event.title" class="img-event">
         </div>
-    </section>
+      </section>
 
-    <!-- ++++++++++++++ EVENT DETAILS ++++++++++++++++-->
-    <section id="event-details-section" class="grid-con">
-        <div id="event-content" class="col-span-full l-col-start-2 l-col-end-12">
-            <p>
-                Our campaign for mental health aims to break down barriers and encourage individuals to explore the possibilities that lie beyond their struggles. With the symbolic yellow door at the entrance bearing the slogan “Unlock the door to possibility,” we invite passersby to take a step towards supporting mental health initiatives. This door serves as a metaphorical representation of the opportunities awaiting those who are willing to engage with the topic, emphasizing that by opening up and contributing, individuals not only support a worthy cause but also open themselves up to new perspectives and experiences.
-            </p>
+      <!-- ++++++++++++++ EVENT DETAILS ++++++++++++++++-->
+      <section id="event-details-section" class="grid-con">
+          <div id="event-content" class="col-span-full l-col-start-2 l-col-end-12">
+              <p>{{event.content}}</p> 
+          </div>
+          
+      </section>
 
-            <p>
-                Inside the booth, a surprise awaits those who choose to donate such as the chance to encounter a celebrity. This unexpected twist adds an element of excitement and intrigue to the donation process, enticing more people to participate. As celebrities express their gratitude to donors, it fosters a sense of connection and community, reinforcing the idea that we are all in this together when it comes to supporting mental health. By capturing these moments on film and sharing them across social media platforms like Instagram, TikTok, and YouTube, we aim to spread awareness far and wide, inspiring others to join the movement and unlock the door to possibility for themselves and others.
-            </p>
-        </div>
-        
-    </section>
-
+    </div>
+    
     <!-- ++++++++++++++ SECTION SEPARATOR CTA ++++++++++++++++-->
     <section class="section-separator-alt">
     <div id="cta-title">
@@ -83,7 +81,7 @@
         </p>
     </div>
     <div id="cta-buttons">
-        <a href="index.html#contact-section"
+        <a href="events.html"
         ><button class="btn-white-fill">MORE EVENTS</button></a
         >
     </div>
@@ -138,7 +136,7 @@
     <h2 class="hidden">Footer</h2>
     <div id="footer-content" class="col-span-full">
         <div id="footer-logo">
-        <img src="images/fs6-logo-blue.svg" alt="logo" />
+        <img src="images/fs6-logo-white.svg" alt="logo" />
         </div>
         <nav>
         <a href="index.html">Home</a>
@@ -158,5 +156,8 @@
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="ri-arrow-up-s-line"></i>
     </a>
+    <!-- this scripts tags only works when placed at the bottom -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.7/dist/vue.global.prod.js"></script>
+    <script src="js/event-post.js"></script>
 </body>
 </html>

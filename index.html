@@ -317,19 +317,21 @@
     </section>
 
     <!-- ++++++++++++++ Campaigns and EVENTS ++++++++++++++++-->
-    <section id="events" class="grid-con">
+    <section id="events" class="grid-con event-list">
       <div id="events-section" class="col-span-full">
         <h2>EVENTS AND CAMPAIGNS</h2>
 
-        <div v-for="latestEvents in eventsData.slice(0, 4)" class="event-card">
-          <a href="eventdetails.html">
+        <div v-for="latestEvents in eventsData.slice(0, 4)" class="event-card" :data-event-id="latestEvents.id" @click="showEventPage(latestEvents.id)">
+          <a>
             <img :src="'./images/' + latestEvents.thumbnail" :alt="latestEvents.title">
           </a>
           <div class="event-card-content">
             <h3>{{ latestEvents.title }}</h3>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
+            <a class="btn-card">Read More &#8594;</a>
           </div>
         </div>
+
+        
         
       </div>
 
@@ -348,12 +350,12 @@
             at Foundation Sixty6 have our doors open to support and guide those
             who need it.
           </p>
-          <a href="#external-url" class="btn-video">I WANT TO HELP</a>
+          <a href="getinvolved.html" class="btn-video">I WANT TO HELP</a>
         </div>
 
         <div id="video-player">
           <video controls poster="video/thumbnail.jpg">
-            <source src="video/video.mp4" type="video/mp4" />
+            <source src="video/video_.mp4" type="video/mp4"/>
             <p>
               You're using a very old browser, that doesn't support video
               playback
@@ -369,35 +371,13 @@
       <div class="blog-latest-content col-span-full">
         <h2>LATEST BLOG UPDATES</h2>
 
-
-      <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
-          <a>
-              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
-          </a>
-          <h3>{{ latestBlog.title }}</h3>
-          <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
-      </div>
-      
-
-        <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
-            <a :href="'blog-post.html?id=' + latestBlog.id">
+        <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+            <a>
                 <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
             </a>
             <h3>{{ latestBlog.title }}</h3>
-            <p>{{ latestBlog.published_date }}</p>
-        </div> -->
-
-
-      
-      
-
-        <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview">
-          <a href="blog-post.html">
-              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
-          </a>
-          <h3>{{ latestBlog.title }}</h3>
-          <p>{{ latestBlog.published_date }}</p>
-        </div> -->
+            <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
+        </div>
 
       </div>
       <div class="link-to-blogs col-span-full l-col-start-8 xl-col-start-9">

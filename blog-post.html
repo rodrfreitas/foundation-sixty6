@@ -63,33 +63,18 @@
 
     <!-- ++++++++++++++ LATEST BLOG POSTS ++++++++++++++++-->
 
-    <section class="blog-latest grid-con">
+    <section class="blog-latest blog-list grid-con">
     <div class="blog-latest-content col-span-full">
         <h2>LATEST BLOG UPDATES</h2>
 
-        <div class="blog-post-preview">
-        <a href="blog-post.html"
-            ><img src="images/blog/blog-post-1.jpg" alt="Blog post 1"
-        /></a>
-        <h3>Understanding Psychotic Depression</h3>
-        <p>2024, February 10</p>
-        </div>
-
-        <div class="blog-post-preview">
-        <a href="blog-post.html"
-            ><img src="images/blog/blog-post-2.jpg" alt="Blog post 2"
-        /></a>
-        <h3>The Power in Seeking Support</h3>
-        <p>2024, February 10</p>
-        </div>
-
-        <div class="blog-post-preview">
-        <a href="blog-post.html"
-            ><img src="images/blog/blog-post-3.jpg" alt="Blog post 3"
-        /></a>
-        <h3>You are not alone</h3>
-        <p>2024, February 10</p>
-        </div>
+        <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+          <a>
+              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+          </a>
+          <h3>{{ latestBlog.title }}</h3>
+          <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
+      </div>
+        
     </div>
     <div class="link-to-blogs col-span-full l-col-start-8 xl-col-start-9">
         <a href="blog.html">MORE BLOG POSTS <span class="ri-arrow-right-line"></span></a>
@@ -145,7 +130,7 @@
     <h2 class="hidden">Footer</h2>
     <div id="footer-content" class="col-span-full">
         <div id="footer-logo">
-        <img src="images/fs6-logo-blue.svg" alt="logo" />
+        <img src="images/fs6-logo-white.svg" alt="logo" />
         </div>
         <nav>
         <a href="index.html">Home</a>

@@ -6,7 +6,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 8px 36px 8px 36px;
-    background-color: v.$fs6-blue;
+    background-color: v.$fs6-pink;
     //border: solid 2px v.$fs6-yellow;
     border-radius: 25px;
     font-size: 18px;
@@ -14,7 +14,7 @@
     font-family: v.$heading-font-family;
     //mix-blend-mode: difference;
     color: #fff;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .btn-orange-line:hover {
@@ -24,13 +24,13 @@
 }
 
 .btn-yellow-pure-line {
-    width: 70%;
+    width: 16rem;
     margin-top: 35px;
     margin: auto;
     padding: 8px 16px 8px 16px;
     //padding: 8px 16px 8px 16px;
     background-color: transparent;
-    border: solid 2px v.$fs6-blue;
+    border: solid 2px v.$fs6-pink;
     border-radius: 25px;
     font-size: 18px;
     font-weight: bold;

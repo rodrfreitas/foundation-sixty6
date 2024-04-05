@@ -10,7 +10,7 @@ scrollRevCalls(); //scrollreveal handling
 //scrollToTop(); //scroll to top button
 
 if(document.body.dataset.page === 'home') {
-	plyrIni();
+	//plyrIni();
 	gallery();
 }
 
@@ -81,6 +81,9 @@ const eventsLatest = Vue.createApp({
                 this.error = "No events found - Error: " + error;
             });
         },
+        showEventPage(eventId) {
+            window.location.href = 'eventdetails.html?id=' + eventId;
+        }
     },
     mounted() {
         console.log(this.message); // Log the message to the console
@@ -89,4 +92,4 @@ const eventsLatest = Vue.createApp({
 
 // Mount Vue instances
 blogLatest.mount('.blog-list');
-eventsLatest.mount('#events');
+eventsLatest.mount('.event-list');

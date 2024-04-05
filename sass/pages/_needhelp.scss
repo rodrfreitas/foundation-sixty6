@@ -42,12 +42,16 @@
     width: 320px;
     border-radius: 8px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    //align-items:stretch;
     
     background-color: #fff;
     padding: 50px 30px 50px 30px;
+
+    .btn-orange-line {
+        margin-top: auto;
+    }
 
     h3 {
         align-self: flex-start;
@@ -55,12 +59,15 @@
         padding-bottom: 20px;
         color: v.$fs6-pink;
         font-size: 22px;
+        margin-top: 0;
     }
 
     p {
         align-items: flex-start;
         font-size: 18px;
         line-height: 28px;
+        margin-bottom: 20px;
+        flex-grow: 1;
     }
 
 
