@@ -1,0 +1,419 @@
+@use "../abstracts" as a;
+
+.admin-body {
+  background-image: url("../images/admin-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-items: center;
+  height: 100vh;
+  background-position: center center;
+}
+
+.admin-login-div {
+  background-color: rgba(198, 198, 198, 0.1);
+  padding: 50px 20px 20px 20px;
+  border-radius: 10px;
+  margin-top: 30%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.admin-login-div h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.admin-login-div p {
+  color: #fff;
+  text-align: center;
+}
+
+#admin-form label {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border-style: none;
+}
+
+#admin-form input,
+textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+}
+
+#admin-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#admin-form p {
+  text-align: left;
+  font-size: 14px;
+}
+
+.forgotPassword a {
+  color: white;
+  text-decoration: none;
+}
+
+.forgotPassword a:hover {
+  color: a.$primary-color;
+}
+
+#admin-form input[type="submit"] {
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  background-color: a.$fs6-blue;
+  transition: all 200ms ease-in;
+  color: white;
+  font-size: 20px;
+  // border-radius: 12px;
+}
+
+#admin-form input[type="submit"]:hover {
+  background-color: white;
+  color: a.$fs6-blue;
+  border-color: darkblue;
+}
+#admin-logo {
+  // margin-right: 162px;
+  // max-width: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.logOut {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 50px; /* or adjust as needed */
+}
+
+.logOut a {
+  border-radius: 30px;
+  background-color: a.$primary-color;
+  text-decoration: none;
+  color: a.$fs6-blue;
+  text-align: center;
+  width: 122px;
+  height: 100%; /* take full height of parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logOut a:hover {
+  border-radius: 30px;
+  background-color: a.$fs6-blue;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 122px;
+  height: 100%; /* take full height of parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#body-project-list {
+  background-color: #e5e5e5;
+  height: 100vh;
+}
+
+#sticky-nav-con-admin {
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  background: a.$fs6-blue;
+}
+
+.admin-dashboard {
+  margin-top: 30px;
+  color: white;
+  height: 70vh;
+}
+
+.dashBoard-dark {
+  border-radius: 10px;
+  padding: 20px;
+  background: a.$fs6-blue;
+  color: white;
+  // grid-row: 1/1;
+  // z-index: 2;
+}
+
+.dashBoard-dark ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.dashBoard-dark ul li {
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.dashBoard-dark ul a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.dashBoard-dark ul a:hover {
+  border-bottom: 3px solid white;
+}
+
+.list-Projects {
+  border-radius: 10px;
+  padding: 20px;
+  background: white;
+  flex-direction: column;
+  // z-index: 1;
+  // grid-row: 1/1;
+  display: flex;
+  // margin-left: 60px;
+}
+
+.project-section {
+  display: flex;
+  flex: 1;
+}
+
+.projectName,
+.actionsList {
+  flex: 1;
+}
+
+.add-project-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.actions {
+  text-align: center;
+}
+
+.actionsList p {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.list-Projects h3 {
+  color: black;
+  font-weight: normal;
+}
+
+.projectName p {
+  color: #20232d;
+  // border-bottom: gray 1px solid;
+  margin-bottom: 12px;
+}
+
+.separator {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.edit {
+  text-decoration: none;
+  color: a.$fs6-blue;
+}
+
+.edit:hover {
+  color: a.$primary-color;
+}
+
+.edit i {
+  font-size: 22px;
+}
+
+.edit i:hover {
+  color: a.$primary-color;
+}
+
+.delete {
+  text-decoration: none;
+  color: red;
+}
+
+.delete i {
+  color: red;
+  font-size: 22px;
+}
+.delete i:hover {
+  color: darkred;
+}
+
+.newProject {
+  text-align: right;
+}
+.newProject a {
+  border-radius: 30px;
+  background-color: a.$fs6-blue;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  width: 165px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newProject a span {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.editProject form label {
+  color: black;
+}
+
+.projectLightbox form label {
+  color: a.$primary-color;
+}
+
+.editProject textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+}
+
+.projectLightbox textarea {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+}
+
+#formUpdate input[type="submit"] {
+  border-radius: 30px;
+  background-color: a.$fs6-blue;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#formUpdate input[name="submit"]:hover {
+  background-color: grey;
+  color: white;
+  border-color: a.$fs6-blue solid 1px;
+}
+
+.add-Project {
+  height: 100%;
+}
+
+.projectName,
+.actionsList {
+  width: 50%; /* Divide the container into two equal parts */
+}
+
+.actionList p a i {
+  // border-bottom: gray 1px solid;
+  margin-bottom: 10px;
+}
+.projectName {
+  float: left; /* Align to the left */
+}
+
+.actionsList {
+  float: right; /* Align to the right */
+}
+
+.projectLightbox input[type="submit"] {
+  border-radius: 30px;
+  background-color: a.$fs6-blue;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.projectLightbox input[name="submit"]:hover {
+  background-color: a.$fs6-blue;
+  color: #20232d;
+}
+
+.lightbox {
+  width: 70%;
+  // height: 100%;
+  position: absolute;
+  top: 2%;
+  margin-left: 15%;
+  background-size: 50vh;
+  background-position: 40px bottom;
+  z-index: 99999;
+  display: none;
+  background-color: white;
+  border-radius: 15px;
+  border-color: a.$fs6-blue;
+  padding: 30px;
+}
+
+.lightbox_close {
+  position: relative;
+  top: 0px;
+  left: 92%;
+  color: a.$fs6-blue;
+  font-size: 20px;
+
+  text-decoration: none;
+}
+
+.lightbox_close i {
+  color: a.$fs6-blue;
+  font-size: 15px;
+}
+
+.lightbox_close i:hover {
+  color: a.$fs6-blue;
+}
+.lightbox_close:hover {
+  color: a.$fs6-blue;
+}
+
+.lightbox article {
+  display: block;
+  align-items: center;
+}
+
+.lightbox article div {
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px #151515;
+  color: #ffffff;
+  padding-left: 50px; /* Adjust the padding as needed for spacing */
+}
+
+.lightbox article img {
+  padding-left: 20px;
+  max-width: 90%;
+}
+
+.lightbox article h2 {
+  font-size: 60px;
+}
+
+.lightbox:target {
+  display: block;
+  // backdrop-filter: blur(8px);
+}
