@@ -7,14 +7,21 @@
     <!-- ++++++++++++++ FAVICON  ++++++++++++++++-->
     <link rel="shortcut icon" href="images/favicon.png" type="images/x-icon" />
     <!-- ++++++++++++++ ICON LIBRARY ++++++++++++++++-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
     <!-- ++++++++++++++ CSS INCLUDES ++++++++++++++++-->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <!-- ++++++++++++++ GREENSOCK ++++++++++++++++-->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
     <script defer src="js/gsap.min.js"></script>
     <script defer src="js/DrawSVGPlugin.min.js"></script>
@@ -30,7 +37,10 @@
     <!-- ++++++++++++++ VUEJS ++++++++++++++++-->
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- ++++++++++++++ VUEJS ROUTER ++++++++++++++++-->
-    <script defer src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/vue-router@4.0.15/dist/vue-router.global.js"
+    ></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
     <script type="module" defer src="js/main.js"></script>
   </head>
@@ -74,9 +84,7 @@
     </div>
     <!-- ++++++++++++++ HERO ++++++++++++++++-->
     <section id="hero-main" class="grid-con">
-
       <div id="hero-content" class="col-span-full l-col-start-2 l-col-end-12">
-
         <div id="hero-text">
           <h3>We <span>open</span> the door to</h3>
           <h2>POSSIBILITIES</h2>
@@ -86,21 +94,21 @@
             about, we offer a helping hand. Together, we can make all the
             difference in someone else's life.
           </p>
-          <a href="#goals"><button class="btn-blue-fill">How we help</button></a>
+          <a href="#goals"
+            ><button class="btn-blue-fill">How we help</button></a
+          >
         </div>
-        
+
         <div id="hero-img">
-          <img src="images/herov2.png" alt="Foundation Sixty6 Hero Image">
+          <img src="images/herov2.png" alt="Foundation Sixty6 Hero Image" />
         </div>
-
       </div>
-
     </section>
     <!-- ++++++++++++++ GOALS ++++++++++++++++-->
     <section id="goals" class="grid-con">
       <div id="goals-content" class="col-span-full">
         <h2>Our Goals</h2>
-        
+
         <div class="goals-details">
           <i class="circle-icon-container ri-hand-coin-line"></i>
           <h3>Make Affordable Access a Reality</h3>
@@ -116,7 +124,9 @@
         <div class="goals-details">
           <i class="circle-icon-container ri-user-smile-line"></i>
           <h3>Create Employment Opportunities</h3>
-          <p>Foster partnerships for employment opportunities for young adults.</p>
+          <p>
+            Foster partnerships for employment opportunities for young adults.
+          </p>
         </div>
       </div>
     </section>
@@ -299,20 +309,45 @@
     <!-- ++++++++++++++ Building Bridges ++++++++++++++++-->
     <section id="building-bridges" class="grid-con">
       <div id="building-bridges-content" class="col-span-full">
-
         <div id="building-bridges-text">
           <h2>Openning Doors</h2>
           <h3>The Vital Role of Healthcare Providers and Employers</h3>
-          <p><span>Healthcare providers play a vital role</span> in diagnosing, treating, and supporting individuals with mental health conditions. Their expertise and compassionate care are essential in helping individuals navigate their mental health journey and access the resources they need to thrive.</p>
-          <p>Similarly, <span>employers play a crucial role in creating inclusive workplaces</span> that support the mental health and well-being of their employees. By fostering environments of understanding, flexibility, and support, employers can empower individuals to bring their whole selves to work and thrive in their professional endeavors.</p>
-          <p><span>Together, healthcare providers and employers form a powerful network of support</span>, breaking down barriers and creating pathways to mental wellness. By recognizing the importance of this partnership, we can work towards a society where individuals facing mental health challenges receive the care, support, and opportunities they deserve.</p>
+          <p>
+            <span>Healthcare providers play a vital role</span> in diagnosing,
+            treating, and supporting individuals with mental health conditions.
+            Their expertise and compassionate care are essential in helping
+            individuals navigate their mental health journey and access the
+            resources they need to thrive.
+          </p>
+          <p>
+            Similarly,
+            <span
+              >employers play a crucial role in creating inclusive
+              workplaces</span
+            >
+            that support the mental health and well-being of their employees. By
+            fostering environments of understanding, flexibility, and support,
+            employers can empower individuals to bring their whole selves to
+            work and thrive in their professional endeavors.
+          </p>
+          <p>
+            <span
+              >Together, healthcare providers and employers form a powerful
+              network of support</span
+            >, breaking down barriers and creating pathways to mental wellness.
+            By recognizing the importance of this partnership, we can work
+            towards a society where individuals facing mental health challenges
+            receive the care, support, and opportunities they deserve.
+          </p>
           <a href="getinvolved.html" class="btn-video">GET INVOLVED TODAY</a>
         </div>
 
         <div id="building-bridges-img">
-          <img src="images/bridges.png" alt="Heath Care Providers and Employers">
+          <img
+            src="images/bridges.png"
+            alt="Heath Care Providers and Employers"
+          />
         </div>
-
       </div>
     </section>
 
@@ -323,14 +358,16 @@
 
         <div v-for="latestEvents in eventsData.slice(0, 4)" class="event-card">
           <a href="eventdetails.html">
-            <img :src="'./images/' + latestEvents.thumbnail" :alt="latestEvents.title">
+            <img
+              :src="'./images/' + latestEvents.thumbnail"
+              :alt="latestEvents.title"
+            />
           </a>
           <div class="event-card-content">
             <h3>{{ latestEvents.title }}</h3>
             <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
           </div>
         </div>
-        
       </div>
 
       <div class="link-to-page col-span-full l-col-start-8 xl-col-start-9">
@@ -369,15 +406,22 @@
       <div class="blog-latest-content col-span-full">
         <h2>LATEST BLOG UPDATES</h2>
 
-
-      <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
+        <div
+          v-for="latestBlog in blogData.slice(0, 3)"
+          class="blog-post-preview"
+          :data-blog-id="latestBlog.id"
+          @click="showBlogPost(latestBlog.id)"
+        >
           <a>
-              <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
+            <img
+              :src="'./images/blog/' + latestBlog.thumbnail"
+              :alt="latestBlog.title"
+            />
           </a>
           <h3>{{ latestBlog.title }}</h3>
-          <p>{{ latestBlog.published_date }}</p> <!-- Adjusted property name -->
-      </div>
-      
+          <p>{{ latestBlog.published_date }}</p>
+          <!-- Adjusted property name -->
+        </div>
 
         <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview" :data-blog-id="latestBlog.id" @click="showBlogPost(latestBlog.id)">
             <a :href="'blog-post.html?id=' + latestBlog.id">
@@ -387,10 +431,6 @@
             <p>{{ latestBlog.published_date }}</p>
         </div> -->
 
-
-      
-      
-
         <!-- <div v-for="latestBlog in blogData.slice(0, 3)" class="blog-post-preview">
           <a href="blog-post.html">
               <img :src="'./images/blog/' + latestBlog.thumbnail" :alt="latestBlog.title">
@@ -398,7 +438,6 @@
           <h3>{{ latestBlog.title }}</h3>
           <p>{{ latestBlog.published_date }}</p>
         </div> -->
-
       </div>
       <div class="link-to-blogs col-span-full l-col-start-8 xl-col-start-9">
         <a href="blog.html"
@@ -413,12 +452,31 @@
         <h2>GALLERY</h2>
         <div class="gallery-container">
           <div class="gallery-slider">
-            <img class="slider-picture" src="images/gallery/pic1.jpg" alt="Picture 1" class="gallery-picture">
-            <img class="slider-picture" src="images/gallery/pic2.jpg" alt="Picture 1" class="gallery-picture">
-            <img class="slider-picture" src="images/gallery/pic3.jpg" alt="Picture 1" class="gallery-picture">
+            <img
+              class="slider-picture"
+              src="images/gallery/pic1.jpg"
+              alt="Picture 1"
+              class="gallery-picture"
+            />
+            <img
+              class="slider-picture"
+              src="images/gallery/pic2.jpg"
+              alt="Picture 1"
+              class="gallery-picture"
+            />
+            <img
+              class="slider-picture"
+              src="images/gallery/pic3.jpg"
+              alt="Picture 1"
+              class="gallery-picture"
+            />
           </div>
-          <button id="btn-prev"><i class="ri-arrow-left-fill"></i> Previous</button>
-          <button id="btn-next">Next <i class="ri-arrow-right-fill"></i></button>
+          <button id="btn-prev">
+            <i class="ri-arrow-left-fill"></i> Previous
+          </button>
+          <button id="btn-next">
+            Next <i class="ri-arrow-right-fill"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -441,27 +499,36 @@
         </p>
       </div>
       <div id="contact-form" class="col-span-full l-col-span-5">
-        <form>
+        <form id="contactForm">
           <!-- <label for="name">Name: </label> -->
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder="Name*"
-          />
+          <input type="text" name="first_name" id="fname" placeholder="Name*" />
 
           <!-- <label for="email">Email: </label> -->
-          <input type="text" name="email" id="email" placeholder="E-mail*" />
+          <input
+            type="text"
+            name="emailAddress"
+            id="email"
+            placeholder="E-mail*"
+          />
 
           <!-- <label for="message">Message: </label> -->
           <textarea
-            name="comments"
-            id="comments"
+            name="message"
+            type="text"
+            id="message"
             placeholder="Message*"
           ></textarea>
 
-          <input type="submit" value="Check this out!" class="subimit-button" />
+          <input
+            type="submit"
+            name="submit"
+            value="SUBMIT"
+            class="subimit-button"
+          />
           <br />
+          <section id="feedback">
+            <p>*Please fill out all required sections</p>
+          </section>
         </form>
       </div>
     </section>
@@ -492,6 +559,5 @@
     <a href="#" class="scrolltop" id="scroll-top">
       <i class="ri-arrow-up-s-line"></i>
     </a>
-
   </body>
 </html>
