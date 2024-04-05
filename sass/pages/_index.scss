@@ -1,11 +1,12 @@
-@forward 'home';
-@forward 'about';
-@forward 'events';
-@forward 'event-details';
-@forward 'blog';
-@forward 'needhelp';
-@forward 'getinvolved';
+@forward "home";
+@forward "about";
+@forward "events";
+@forward "event-details";
+@forward "blog";
+@forward "needhelp";
+@forward "getinvolved";
+@forward "admin";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
