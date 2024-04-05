@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 05, 2024 at 03:33 AM
--- Server version: 8.0.31
--- PHP Version: 8.2.0
+-- Generation Time: Apr 05, 2024 at 01:20 PM
+-- Server version: 8.2.0
+-- PHP Version: 8.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `foundation_sixty6`
+-- Database: `fs6_web`
 --
 
 -- --------------------------------------------------------
@@ -180,6 +180,27 @@ INSERT INTO `event_media` (`id`, `event_id`, `image_url`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `test_users`
+--
+
+DROP TABLE IF EXISTS `test_users`;
+CREATE TABLE IF NOT EXISTS `test_users` (
+  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `test_users`
+--
+
+INSERT INTO `test_users` (`id`, `username`, `password`) VALUES
+(1, 'Foundation66', 'Sixty6!');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -193,16 +214,17 @@ CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `usertype_id`, `avatar`, `first_name`, `last_name`, `username`, `password`) VALUES
-(1, 2, 'kwency.png', 'Kwency', 'Dahilan', 'kwenox25', 'tom4ndj3rry!'),
+(1, 2, 'kwency.png', 'Foundation66', 'Foundation66', 'Foundation66', 'Sixty6!'),
 (2, 1, 'rodrigo_freitas.png', 'Rodrigo', 'Freitas', 'rfreitas', 'k0b3bryant24\''),
-(3, 3, 'jon_yun.jpg', 'Jon', 'Yun', 'jonyun', 'root');
+(3, 3, 'jon_yun.jpg', 'Jon', 'Yun', 'jonyun', 'root'),
+(4, 2, 'kwency.png', 'Kwency', 'Dahilan', 'kwenox25', 'tom4ndj3rry!');
 
 -- --------------------------------------------------------
 

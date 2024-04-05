@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost;dbname=foundation_sixty6;charset=utf8mb4";
+$dsn = "mysql:host=localhost;dbname=fs6_web;charset=utf8mb4";
 try {
 $connection = new PDO($dsn, 'root', '');
 } catch (Exception $e) {
