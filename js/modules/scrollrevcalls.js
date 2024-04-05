@@ -4,7 +4,7 @@ export function scrollRevCalls() {
         origin: 'top',
         distance: '60px',
         duration: 2500,
-        delay: 400,
+        delay: 200,
     })
 
     sr.reveal(`#hero-img-large, #video-player, #contact-form, #about-hero-logo`, {origin: 'right'})

@@ -10,9 +10,9 @@ hambrMenu(); //hamburger menu
 scrollRevCalls(); //scrollreveal handling
 //scrollToTop(); //scroll to top button
 
-if (document.body.dataset.page === "home") {
-  plyrIni();
-  gallery();
+if(document.body.dataset.page === 'home') {
+	//plyrIni();
+	gallery();
   contact();
 }
 
@@ -58,32 +58,36 @@ const blogLatest = Vue.createApp({
 
 ////////////////////////////////// Events Latest //////////////////////////////////////
 const eventsLatest = Vue.createApp({
-  created() {
-    this.fetchLatestBlogPosts();
-  },
-  data() {
-    return {
-      message: "Latest events component online",
-      eventsData: [],
-      thumbnail: "",
-      title: "",
-      error: null,
-    };
-  },
-  methods: {
-    fetchLatestBlogPosts() {
-      fetch(
-        "http://localhost/foundation-sixty6/foundation_sixty6/public/events"
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          console.log("Latest evets info:", data); // Debug
-          this.eventsData = data;
-        })
-        .catch((error) => {
-          console.error(error);
-          this.error = "No events found - Error: " + error;
-        });
+
+    created() {
+        this.fetchLatestBlogPosts();
+    },
+    data() {
+        return {
+            message: 'Latest events component online',
+            eventsData: [],
+            thumbnail: "",
+            title: "",
+            error: null
+        };
+    },
+    methods: {
+        fetchLatestBlogPosts() {
+            fetch('http://localhost/foundation-sixty6/foundation_sixty6/public/events')
+            .then(res => res.json())
+            .then(data => {
+                console.log("Latest evets info:", data); // Debug
+                this.eventsData = data;
+            })
+            .catch(error => {
+                console.error(error);
+                this.error = "No events found - Error: " + error;
+            });
+        },
+        showEventPage(eventId) {
+            window.location.href = 'eventdetails.html?id=' + eventId;
+        }
+
     },
   },
   mounted() {
@@ -92,5 +96,6 @@ const eventsLatest = Vue.createApp({
 });
 
 // Mount Vue instances
-blogLatest.mount(".blog-list");
-eventsLatest.mount("#events");
+
+blogLatest.mount('.blog-list');
+eventsLatest.mount('.event-list');

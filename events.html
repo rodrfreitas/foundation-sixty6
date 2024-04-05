@@ -23,6 +23,8 @@
     ></script>
     <!-- ++++++++++++++ ScrollReveal JS ++++++++++++++++-->
     <script defer src="js/scrollreveal.min.js"></script>
+    <!-- ++++++++++++++ VUEJS ++++++++++++++++-->
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- ++++++++++++++ MAIN JS ++++++++++++++++-->
     <script type="module" defer src="js/main.js"></script>
   </head>
@@ -68,66 +70,29 @@
     <!-- ++++++++++++++ HERO ++++++++++++++++-->
     <section id="hero-events" class="grid-con">
       <div id="hero-content" class="col-span-full l-col-start-2 l-col-end-12">
-        <h3>
-          We support campaigns and projects that improve the
-          <span>mental health</span> of teenagers and young adults.
-        </h3>
-        <img
-          src="images/fs6-yellow-icon.png"
-          alt="Foundation Sixty6 Icon"
-          class="overlapping-img l-col-start-2 l-col-end-12"
-        />
+
+        <h3>We support campaigns and projects that improve the <span>mental health</span> of teenagers and young adults.</h3>
+        <img src="images/fs6-union-s.png" alt="Foundation Sixty6 Icon" class="overlapping-img l-col-start-2 l-col-end-12">
       </div>
     </section>
 
-    <!-- ++++++++++++++ EVENT LIST ++++++++++++++++-->
-    <section id="events" class="grid-con">
+
+  <!-- ++++++++++++++ EVENT LIST ++++++++++++++++-->
+  <section id="events" class="grid-con event-list">
+
       <div id="events-section" class="col-span-full">
         <h2>EVENTS AND CAMPAIGNS</h2>
 
-        <div class="event-card-mini">
-          <a href="eventdetails.html"
-            ><img src="images/event-1.jpg" alt="Event 1"
-          /></a>
+        <div v-for="latestEvents in eventsData.slice(0, 4)" class="event-card-mini" :data-event-id="latestEvents.id" @click="showEventPage(latestEvents.id)">
+          <a>
+            <img :src="'./images/' + latestEvents.thumbnail" :alt="latestEvents.title">
+          </a>
           <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
+            <h3>{{ latestEvents.title }}</h3>
+            <a class="btn-card">Read More &#8594;</a>
           </div>
         </div>
 
-        <div class="event-card-mini">
-          <a href="eventdetails.html"
-            ><img src="images/event-2.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
-
-        <div class="event-card-mini">
-          <a href="eventdetails.html"
-            ><img src="images/event-3.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
-
-        <div class="event-card-mini">
-          <a href="eventdetails.html"
-            ><img src="images/event-4.jpg" alt="Event 1"
-          /></a>
-          <div class="event-card-content">
-            <h3>Unlock The Door To Possibility</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="eventdetails.html" class="btn-card">Read More &#8594;</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -200,7 +165,7 @@
       <h2 class="hidden">Footer</h2>
       <div id="footer-content" class="col-span-full">
         <div id="footer-logo">
-          <img src="images/fs6-logo-blue.svg" alt="logo" />
+          <img src="images/fs6-logo-white.svg" alt="logo" />
         </div>
         <nav>
           <a href="index.html">Home</a>
