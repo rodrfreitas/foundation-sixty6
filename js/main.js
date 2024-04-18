@@ -86,10 +86,8 @@ const eventsLatest = Vue.createApp({
         },
         showEventPage(eventId) {
             window.location.href = 'eventdetails.html?id=' + eventId;
-        }
-
+        },
     },
-  },
   mounted() {
     console.log(this.message); // Log the message to the console
   },
